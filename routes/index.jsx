@@ -43,10 +43,15 @@ module.exports = ()=>{
       </Route>
       <Route path='require' component={Require}/>
       <Route path='cases' component={Cases}>
-        <Route path='case' component={Case}/>
-        <Route path='web' component={Webcase}/>
-        <Route path='app' component={Appcase}/>
-        <Route path='wechat' component={Wechatcase}/>
+        <Route path='web' component={Webcase}>
+          <Route path='case' component={Case}/>
+        </Route>
+        <Route path='app' component={Appcase}>
+          <Route path='case' component={Case}/>
+        </Route>
+        <Route path='wechat' component={Wechatcase}>
+          <Route path='case' component={Case}/>
+        </Route>
       </Route>
       <Route path='product' component={Product}/>
       <Route path='team' component={Team}/>
