@@ -52,6 +52,11 @@ module.exports = ()=>{
         <Route path='wechat' component={Wechatcase}>
           <Route path='case' component={Case}/>
         </Route>
+
+
+
+
+
       </Route>
       <Route path='product' component={Product}/>
       <Route path='team' component={Team}/>
