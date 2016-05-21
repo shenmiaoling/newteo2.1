@@ -7,7 +7,7 @@ import {locales} from '../../settings'
 require('./styles')
 module.exports = React.createClass({
   render() {
-    return <nav className="navbar navbar-light bg-faded">
+    return <nav className="navbar navbar-light bg-faded hidden-sm-down topbar">
         <IndexLink to="/" className="navbar-brand"><img src='../../images/logo.png' className="navbar-img"></img></IndexLink>
         <ul className="nav navbar-nav">
           <div className='row-fluid'>
@@ -18,7 +18,7 @@ module.exports = React.createClass({
             </div>
             <div className='span2'>
               <li className="nav-item">
-                <Link to="/require" className="nav-link">{locales.zh_CN.require}</Link>
+                <Link to="/requirement" className="nav-link">{locales.zh_CN.requirement}</Link>
               </li>
             </div>
             <div className='span2'>

@@ -1,32 +1,109 @@
 import React from 'react'
+import superagent from 'superagent'
 require('./styles')
 module.exports=React.createClass({
+  getInitialState(){
+    return{
+      cases:null,
+    }
+  },
+  componentDidMount(){
+    this.fetchCases()
+  },
+  fetchCases(){
+    superagent.get('https://newteo.leanapp.cn/v1/demos').end((err,response)=>{
+      this.setState({
+        cases:response.body.price
+      })
+      console.log(cases)
+    })
+  },
   render(){
-    return <div className='development'>
+    return <div className='Cases'>
       <div className='text-center'>
-        <h1>实现一套完整的开发流程</h1>
+        <h1>这些项目被newTeo实现</h1>
       </div>
-      <div className='container container-block'>
+      <div className='container cases-container'>
         <div className="row">
-          <div className="col-xs-12 col-md-3" id='column'>
-            <img src='./images/pm.png' className="img-range"/>
-            <h4>需求整理 & 原型</h4>
-            <p>newTeo 为您整理项目需求，编写需求文档并制作原型</p>
+          <div className="col-xs-12 col-md-3">
+            <div className='img-container'>
+              <div className='cover'>
+                <p>项目名称：xxx</p>
+                <p>价格：10000</p>
+              </div>
+              <img src='./images/pencil.jpg' className="cases-img"/>
+            </div>
           </div>
-          <div className="col-xs-12 col-md-3" id='column'>
-            <img src='./images/UI.png' className="img-range"/>
-            <h4>UI 设计</h4>
-            <p>newTeo 为您设计产品界面，多种风格满意为止。</p>
+          <div className="col-xs-12 col-md-3">
+            <div className='img-container'>
+              <div className='cover'>
+                <p>项目名称：xxx</p>
+                <p>价格：10000</p>
+              </div>
+              <img src='./images/pencil.jpg' className="cases-img"/>
+            </div>
           </div>
-          <div className="col-xs-12 col-md-3" id='column'>
-            <img src='./images/coding.png' className="img-range"/>
-            <h4>程序开发</h4>
-            <p>newTeo 为您开发各种平台实现，严格项目监理管控开发流程，保障交付。</p>
+          <div className="col-xs-12 col-md-3">
+            <div className='img-container'>
+              <div className='cover'>
+                <p>项目名称：xxx</p>
+                <p>价格：10000</p>
+              </div>
+              <img src='./images/pencil.jpg' className="cases-img"/>
+            </div>
           </div>
-          <div className="col-xs-12 col-md-3" id='column'>
-            <img src='./images/server.png' className="img-range"/>
-            <h4>部署 & 上线</h4>
-            <p>newTeo 为您部署项目、测评、上线</p>
+          <div className="col-xs-12 col-md-3">
+            <div className='img-container'>
+              <div className='cover'>
+                <p>项目名称：xxx</p>
+                <p>价格：10000</p>
+              </div>
+              <img src='./images/pencil.jpg' className="cases-img"/>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-xs-12 col-md-3">
+            <div className='img-container'>
+              <div className='cover'>
+                <p>项目名称：xxx</p>
+                <p>价格：10000</p>
+              </div>
+              <div className='img-container'>
+              <div className='cover'>
+                <p>项目名称：xxx</p>
+                <p>价格：10000</p>
+              </div>
+              <img src='./images/pencil.jpg' className="cases-img"/>
+            </div>
+            </div>
+          </div>
+          <div className="col-xs-12 col-md-3">
+            <div className='img-container'>
+              <div className='cover'>
+                <p>项目名称：xxx</p>
+                <p>价格：10000</p>
+              </div>
+              <img src='./images/pencil.jpg' className="cases-img"/>
+            </div>
+          </div>
+          <div className="col-xs-12 col-md-3">
+            <div className='img-container'>
+              <div className='cover'>
+                <p>项目名称：xxx</p>
+                <p>价格：10000</p>
+              </div>
+              <img src='./images/pencil.jpg' className="cases-img"/>
+            </div>
+          </div>
+          <div className="col-xs-12 col-md-3">
+            <div className='img-container'>
+              <div className='cover'>
+                <p>项目名称：xxx</p>
+                <p>价格：10000</p>
+              </div>
+              <img src='./images/pencil.jpg' className="cases-img"/>
+            </div>
           </div>
         </div>
       </div>

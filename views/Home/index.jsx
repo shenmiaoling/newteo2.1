@@ -4,6 +4,7 @@ import Header from './Header'
 import Development from './Development'
 import Submit from './Submit'
 import Cases from './Cases'
+import Product from './Product'
 module.exports = React.createClass({
   componentDidMount(){
     document.title = locales.zh_CN.home
@@ -14,6 +15,7 @@ module.exports = React.createClass({
       <Development/>
       <Submit/>
       <Cases/>
+      <Product/>
     </div>
   }
 })

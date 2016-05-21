@@ -3,7 +3,7 @@ module.exports = {
     zh_CN: {
       home: '首页',
       balance: '估价',
-      require: '需求',
+      requirement: '需求',
       users: '用户',
       cases: '案例',
       product: '产品',

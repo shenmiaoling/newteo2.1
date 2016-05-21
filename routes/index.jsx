@@ -21,7 +21,7 @@ import Ios from '../views/Balance/ios'
 import Android from '../views/Balance/Android'
 import Wechat from '../views/Balance/Wechat'
 import Result from '../views/Balance/Result'
-import Require from '../views/Require'
+import Requirement from '../views/Requirement'
 import Product from '../views/Product'
 module.exports = ()=>{
   return <Router history={browserHistory}>
@@ -41,7 +41,7 @@ module.exports = ()=>{
           <Route path='result' component={Result}/>
         </Route>
       </Route>
-      <Route path='require' component={Require}/>
+      <Route path='requirement' component={Requirement}/>
       <Route path='cases' component={Cases}>
         <Route path='web' component={Webcase}>
           <Route path='case' component={Case}/>
@@ -52,11 +52,6 @@ module.exports = ()=>{
         <Route path='wechat' component={Wechatcase}>
           <Route path='case' component={Case}/>
         </Route>
-
-
-
-
-
       </Route>
       <Route path='product' component={Product}/>
       <Route path='team' component={Team}/>
