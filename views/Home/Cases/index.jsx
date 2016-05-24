@@ -2,22 +2,6 @@ import React from 'react'
 import superagent from 'superagent'
 require('./styles')
 module.exports=React.createClass({
-  getInitialState(){
-    return{
-      cases:null,
-    }
-  },
-  componentDidMount(){
-    this.fetchCases()
-  },
-  fetchCases(){
-    superagent.get('https://newteo.leanapp.cn/v1/demos').end((err,response)=>{
-      this.setState({
-        cases:response.body.price
-      })
-      console.log(cases)
-    })
-  },
   render(){
     return <div className='Cases'>
       <div className='text-center'>

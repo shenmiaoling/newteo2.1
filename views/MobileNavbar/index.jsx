@@ -21,7 +21,7 @@ module.exports = React.createClass({
       <div className='row'>
         <IndexLink to="/" className="col-sm-3 col-xs-3 col-img"><img src='../../images/logo.png' className='img-nav'></img></IndexLink>
           <div className='col-sm-9 col-xs-9 nav-list' >
-          <span className="mega-octicon octicon-three-bars nav-icon" onClick={this.handleClick}></span>
+          <span className="iconfont icon-drag nav-icon" onClick={this.handleClick}></span>
             <ul className={this.state.navIsOpen?'nav nav-is-open':'nav'}>
               <li className="nav-item">
                 <Link to="/balance" className="nav-link nav-text">{locales.zh_CN.balance}</Link>
