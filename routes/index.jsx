@@ -15,19 +15,19 @@ import Case from '../views/Cases/Case'
 import Webcase from '../views/Cases/Web'
 import Appcase from '../views/Cases/App'
 import Wechatcase from '../views/Cases/Wechat'
-import Balance from '../views/Balance'
-import Web from '../views/Balance/Web'
-import Ios from '../views/Balance/ios'
-import Android from '../views/Balance/Android'
-import Wechat from '../views/Balance/Wechat'
-import Result from '../views/Balance/Result'
+import Evaluation from '../views/evaluation'
+import Web from '../views/Evaluation/Web'
+import Ios from '../views/Evaluation/ios'
+import Android from '../views/Evaluation/Android'
+import Wechat from '../views/Evaluation/Wechat'
+import Result from '../views/Evaluation/Result'
 import Requirement from '../views/Requirement'
 import Product from '../views/Product'
 module.exports = ()=>{
   return <Router history={browserHistory}>
     <Route path='/' component={Application}>
       <IndexRoute component={Home} />
-      <Route path='balance' component={Balance}>
+      <Route path='evaluation' component={Evaluation}>
         <Route path='web' component={Web}>
           <Route path='result' component={Result}/>
         </Route>

@@ -2,7 +2,7 @@ module.exports = {
   locales: {
     zh_CN: {
       home: '首页',
-      balance: '估价',
+      evaluation: '估价',
       requirement: '需求',
       users: '用户',
       cases: '案例',

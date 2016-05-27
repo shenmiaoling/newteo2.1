@@ -6,43 +6,35 @@ import {
 import {locales} from '../../settings'
 require('./styles')
 module.exports = React.createClass({
+
   render() {
-    return <nav className="navbar navbar-light bg-faded hidden-sm-down topbar">
-        <IndexLink to="/" className="navbar-brand"><img src='../../images/logo.png' className="navbar-img"></img></IndexLink>
-        <ul className="nav navbar-nav">
-          <div className='row-fluid'>
-            <div className='span2'>
-              <li className="nav-item">
-                <Link to="/balance" className="nav-link">{locales.zh_CN.balance}</Link>
-              </li>
-            </div>
-            <div className='span2'>
-              <li className="nav-item">
-                <Link to="/requirement" className="nav-link">{locales.zh_CN.requirement}</Link>
-              </li>
-            </div>
-            <div className='span2'>
+    const activeStyle = {borderBottom: '3px solid white',transition: 'all 0.2s ease-in'}
+    return <div className={this.props.hasShadow ? 'navbar navbar-light bg-faded hidden-sm-down topbar navbar-fixed-top row' : 'navbar navbar-light bg-faded hidden-sm-down topbar-shadow navbar-fixed-top row'}>
+        <div className='col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2'>
+          <IndexLink to="/" className="navbar-brand"><img src='../../images/logo.png' className="navbar-img"></img></IndexLink>
+        </div>
+        <div className='col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10'>
+          <ul className="nav nav-inline nav-inline">
             <li className="nav-item">
-              <Link to="/cases" className="nav-link">{locales.zh_CN.cases}</Link>
+              <Link to="/evaluation" className="nav-link navbar-text" activeStyle={activeStyle}>{locales.zh_CN.evaluation}</Link>
             </li>
-          </div>
-          <div className='span2'>
-          <li className="nav-item">
-            <Link to="/product" className="nav-link">{locales.zh_CN.product}</Link>
-          </li>
-          </div>
-          <div className='span2'>
-          <li className="nav-item">
-            <Link to="/team" className="nav-link">{locales.zh_CN.team}</Link>
-          </li>
-          </div>
-          <div className='span2'>
-          <li className="nav-item">
-            <Link to="/contact" className="nav-link">{locales.zh_CN.contact}</Link>
-          </li>
-          </div>
-          </div>
-        </ul>
-      </nav>
+            <li className="nav-item">
+              <Link to="/requirement" className="nav-link navbar-text" activeStyle={activeStyle}>{locales.zh_CN.requirement}</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/cases" className="nav-link navbar-text" activeStyle={activeStyle}>{locales.zh_CN.cases}</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/product" className="nav-link navbar-text" activeStyle={activeStyle}>{locales.zh_CN.product}</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/team" className="nav-link navbar-text" activeStyle={activeStyle}>{locales.zh_CN.team}</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/contact" className="nav-link navbar-text" activeStyle={activeStyle}>{locales.zh_CN.contact}</Link>
+            </li>
+          </ul>
+        </div>
+      </div>
   }
 })
