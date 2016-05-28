@@ -22,25 +22,25 @@ module.exports = React.createClass({
       <div className='row steps'>
         <div className='col-lg-3 col-xl-3 col-xs-6 col-sm-6 col-md-6'>
           <img src='./images/web 2 .png' className='block-img'/>
-          <Link to='/web'>
+          <Link to='/evaluation/web'>
             <button type="button" className="btn btn-primary submit-btn evaluation-btn">网站</button>
           </Link>
         </div>
         <div className='col-lg-3 col-xl-3 col-xs-6 col-sm-6 col-md-6'>
           <img src='./images/ios.png' className='block-img'/>
-          <Link to='/ios'>
+          <Link to='/evaluation/ios'>
             <button type="button" className="btn btn-primary submit-btn evaluation-btn">iOS应用</button>
           </Link>
         </div>
         <div className='col-lg-3 col-xl-3 col-xs-6 col-sm-6 col-md-6'>
           <img src='./images/android.png' className='block-img'/>
-          <Link to='/android'>
+          <Link to='/evaluation/android'>
             <button type="button" className="btn btn-primary submit-btn evaluation-btn">安卓应用</button>
           </Link>
         </div>
         <div className='col-lg-3 col-xl-3 col-xs-6 col-sm-6 col-md-6'>
           <img src='./images/wechat 2.png' className='block-img'/>
-          <Link to='/wechat'>
+          <Link to='/evaluation/wechat'>
             <button type="button" className="btn btn-primary submit-btn evaluation-btn">微信</button>
           </Link>
         </div>
