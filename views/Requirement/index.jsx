@@ -14,11 +14,10 @@ module.exports = React.createClass({
               <fieldset className="form-group item-style">
                 <label className='require-label'>项目类型</label>
                 <select className="form-control" id="exampleSelect1">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
+                  <option>请选择</option>
+                  <option>Web网站</option>
+                  <option>移动应用APP</option>
+                  <option>微信开发</option>
                 </select>
               </fieldset>
             </div>
@@ -26,11 +25,10 @@ module.exports = React.createClass({
               <fieldset className="form-group item-style">
                 <label className='require-label'>项目预算</label>
                 <select className="form-control">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
+                  <option>请选择</option>
+                  <option>1.5万以下</option>
+                  <option>1.5-3</option>
+                  <option>3万以上</option>
                 </select>
               </fieldset>
             </div>

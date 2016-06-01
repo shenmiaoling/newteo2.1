@@ -31,12 +31,12 @@ module.exports = React.createClass({
             </div>
             <img src='images/accomplish.png' className='case-staus'/>
             <div className='col-lg-2 col-xl-2 col-xs-2 col-sm-2 col-md-2'>
-                <h3 className='case-label'>金额</h3>
-                <h3 className='case-count'>￥1,0000</h3>
+                <h2 className='case-label'>金额</h2>
+                <h2 className='case-count'>￥1,0000</h2>
             </div>
             <div className='col-lg-2 col-xl-2 col-xs-2 col-sm-2 col-md-2'>
-              <h3 className='case-label'>周期</h3>
-              <h3 className='case-count'>￥1,0000</h3>
+              <h2 className='case-label'>周期</h2>
+              <h2 className='case-count'>￥1,0000</h2>
             </div>
             <div className='col-lg-2 col-xl-2 col-xs-2 col-sm-2 col-md-2'>
               <h3 className='case-label'>类型</h3>

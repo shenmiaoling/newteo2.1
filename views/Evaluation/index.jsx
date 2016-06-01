@@ -6,13 +6,13 @@ module.exports = React.createClass({
     return <div className='container evaluation'>
       <div className='row steps'>
         <div className='col-lg-4 col-xl-4 col-xs-4 col-sm-4 col-md-4'>
-          <img src='./images/first-step.png' className='block-img first-step '/>
+          <img src='/images/first-step.png' className='block-img'/>
         </div>
         <div className='col-lg-4 col-xl-4 col-xs-4 col-sm-4 col-md-4'>
-          <img src='./images/second-step.png' className='block-img second-step'/>
+          <img src='/images/second-step.png' className='block-img second-step'/>
         </div>
         <div className='col-lg-4 col-xl-4 col-xs-4 col-sm-4 col-md-4'>
-          <img src='./images/third-step.png' className='block-img third-step'/>
+          <img src='/images/third-step.png' className='block-img third-step'/>
         </div>
       </div>
       <div className='text-center'>
@@ -21,25 +21,25 @@ module.exports = React.createClass({
       </div>
       <div className='row steps'>
         <div className='col-lg-3 col-xl-3 col-xs-6 col-sm-6 col-md-6'>
-          <img src='./images/web 2 .png' className='block-img'/>
+          <img src='/images/web-2.png' className='block-img'/>
           <Link to='/evaluation/web'>
             <button type="button" className="btn btn-primary submit-btn evaluation-btn">网站</button>
           </Link>
         </div>
         <div className='col-lg-3 col-xl-3 col-xs-6 col-sm-6 col-md-6'>
-          <img src='./images/ios.png' className='block-img'/>
+          <img src='/images/ios.png' className='block-img'/>
           <Link to='/evaluation/ios'>
             <button type="button" className="btn btn-primary submit-btn evaluation-btn">iOS应用</button>
           </Link>
         </div>
         <div className='col-lg-3 col-xl-3 col-xs-6 col-sm-6 col-md-6'>
-          <img src='./images/android.png' className='block-img'/>
+          <img src='/images/android.png' className='block-img'/>
           <Link to='/evaluation/android'>
             <button type="button" className="btn btn-primary submit-btn evaluation-btn">安卓应用</button>
           </Link>
         </div>
         <div className='col-lg-3 col-xl-3 col-xs-6 col-sm-6 col-md-6'>
-          <img src='./images/wechat 2.png' className='block-img'/>
+          <img src='/images/wechat-2.png' className='block-img'/>
           <Link to='/evaluation/wechat'>
             <button type="button" className="btn btn-primary submit-btn evaluation-btn">微信</button>
           </Link>

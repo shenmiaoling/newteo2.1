@@ -18,7 +18,7 @@ module.exports = React.createClass({
                 <div className='info-icon iconfont address icon-address'></div>
               </div>
               <div className='col-lg-10 col-xl-10 col-xs-10 col-sm-10 col-md-10'>
-                <p className='info-text'>潮州市庵埠镇竹围工业区100号</p>
+                <h1 className='info-text'>潮州市庵埠镇竹围工业区100号</h1>
               </div>
             </div>
             <div className='row info-address'>

@@ -27,20 +27,16 @@ module.exports = ()=>{
   return <Router history={browserHistory}>
     <Route path='/' component={Application}>
       <IndexRoute component={Home} />
-      <Route path='evaluation' component={Evaluation}>
-        <Route path='web' component={Web}>
-          <Route path='result' component={Result}/>
-        </Route>
-        <Route path='ios' component={Ios}>
-          <Route path='result' component={Result}/>
-        </Route>
-        <Route path='android' component={Android}>
-          <Route path='result' component={Result}/>
-        </Route>
-        <Route path='wechat' component={Wechat}>
-          <Route path='result' component={Result}/>
-        </Route>
+      <Route path='evaluation' component={Evaluation}/>
+      <Route path='evaluation/web' component={Web} />
+      <Route path='evaluation/ios' component={Ios}>
+        <Route path='result' component={Result}/>
       </Route>
+      <Route path='evaluation/android' component={Android}>
+        <Route path='result' component={Result}/>
+      </Route>
+      <Route path='evaluation/wechat' component={Wechat}/>
+      <Route path='evaluation/wechat/result' component={Result}/>
       <Route path='requirement' component={Requirement}/>
       <Route path='cases' component={Cases}>
         <Route path='web' component={Webcase}>
