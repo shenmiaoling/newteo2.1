@@ -1,5 +1,10 @@
 .cases-container
   margin-top: 66px
+.case-text-center
+  color: #395348
+  font-size: 2em
+  text-align: center
+  margin-top: 96px
 .cases-img
   display: block
   margin: 0 auto
@@ -15,7 +20,8 @@
   width: 80%
   height: 100%
   text-align: center
-  padding-top: 30px
+  padding-top: 50px
+  line-height: 38px
   color: rgba(255,255,255,0.9)
   background-color: rgba(229,22,85,.64)
   transition: all 0.4s ease-in
@@ -24,12 +30,20 @@
   left: 10%
   bottom: 0
   width: 80%
-  height: 35%
+  height: 36%
   text-align: center
   color: rgba(255,255,255,0.9)
-  background-color: rgba(222,3,87,.6)
+  background-color: rgba(78,68,71,.64)
 .img-container:hover .cover
   opacity: 1
+@media (max-width: 800px)
+  .img-container
+    margin-left: -25px
+@media (max-width: 600px)
+  .img-container
+    margin-left: -25px
 @media (max-width: 384px)
   .img-container
     margin-left: -25px
+  .case-text-center
+    font-size: 25px

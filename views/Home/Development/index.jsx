@@ -49,7 +49,7 @@ module.exports=React.createClass({
               </div>
               <div className='col-xs-7 col-sm-7 col-md-12 col-lg-12 col-xl-12 development-itro'>
                 <h4 className='itro-title'>部署 & 上线</h4>
-                <p className='main-intro'>newTeo 部署项目、测评、上线，保障交付。
+                <p className='main-intro'>newTeo 部署项目、测评、快速上线，保障交付。
               </p>
               </div>
             </div>

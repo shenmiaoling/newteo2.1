@@ -38,7 +38,7 @@ module.exports = React.createClass({
               <fieldset className="form-group item-name">
                 <label className='require-label'>
                     项目名（1-3个）</label>
-                <input type="text" className='name-input'/>
+                <input type="text" className='name-input form-control'/>
               </fieldset>
             </div>
           </div>
@@ -46,7 +46,7 @@ module.exports = React.createClass({
             <div className='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12'>
               <fieldset className="form-group item-description">
                 <label className='require-label'>项目描述（大于50个字符）</label>
-                <textarea className='description-input'></textarea>
+                <textarea className='description-input form-control'></textarea>
               </fieldset>
             </div>
           </div>

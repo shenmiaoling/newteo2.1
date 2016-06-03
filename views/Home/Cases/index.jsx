@@ -4,8 +4,8 @@ require('./styles')
 module.exports=React.createClass({
   render(){
     return <div className='Cases'>
-      <div className='text-center'>
-        <h1>这些项目被newTeo实现</h1>
+      <div className='case-text-center'>
+        <p>这些项目被newTeo实现</p>
       </div>
       <div className='container cases-container'>
         <div className="row">
@@ -15,18 +15,9 @@ module.exports=React.createClass({
                 <p>项目名称：xxx</p>
                 <p>价格：10000</p>
               </div>
-              <div className='mobile-cover hidden-xs-up hidden-sm-up hidden-md-up'>
+              <div className='mobile-cover hidden-md-up'>
                   <p>项目名称：xxx</p>
                   <p>价格：10000</p>
-                </div>
-              <img src='./images/pencil.jpg' className="cases-img"/>
-            </div>
-          </div>
-          <div className="col-xs-6 col-sm-6 col-md-3 col-xl-3 col-lg-3">
-            <div className='img-container'>
-              <div className='cover'>
-                <p>项目名称：xxx</p>
-                <p>价格：10000</p>
               </div>
               <img src='./images/pencil.jpg' className="cases-img"/>
             </div>
@@ -37,6 +28,10 @@ module.exports=React.createClass({
                 <p>项目名称：xxx</p>
                 <p>价格：10000</p>
               </div>
+              <div className='mobile-cover hidden-md-up'>
+                  <p>项目名称：xxx</p>
+                  <p>价格：10000</p>
+              </div>
               <img src='./images/pencil.jpg' className="cases-img"/>
             </div>
           </div>
@@ -45,6 +40,23 @@ module.exports=React.createClass({
               <div className='cover'>
                 <p>项目名称：xxx</p>
                 <p>价格：10000</p>
+              </div>
+              <div className='mobile-cover hidden-md-up'>
+                  <p>项目名称：xxx</p>
+                  <p>价格：10000</p>
+              </div>
+              <img src='./images/pencil.jpg' className="cases-img"/>
+            </div>
+          </div>
+          <div className="col-xs-6 col-sm-6 col-md-3 col-xl-3 col-lg-3">
+            <div className='img-container'>
+              <div className='cover'>
+                <p>项目名称：xxx</p>
+                <p>价格：10000</p>
+              </div>
+              <div className='mobile-cover hidden-md-up'>
+                  <p>项目名称：xxx</p>
+                  <p>价格：10000</p>
               </div>
               <img src='./images/pencil.jpg' className="cases-img"/>
             </div>
@@ -57,14 +69,9 @@ module.exports=React.createClass({
                 <p>项目名称：xxx</p>
                 <p>价格：10000</p>
               </div>
-              <img src='./images/pencil.jpg' className="cases-img"/>
-            </div>
-          </div>
-          <div className="col-xs-6 col-sm-6 col-md-3 col-xl-3 col-lg-3">
-            <div className='img-container'>
-              <div className='cover'>
-                <p>项目名称：xxx</p>
-                <p>价格：10000</p>
+              <div className='mobile-cover hidden-md-up'>
+                  <p>项目名称：xxx</p>
+                  <p>价格：10000</p>
               </div>
               <img src='./images/pencil.jpg' className="cases-img"/>
             </div>
@@ -75,6 +82,10 @@ module.exports=React.createClass({
                 <p>项目名称：xxx</p>
                 <p>价格：10000</p>
               </div>
+              <div className='mobile-cover hidden-md-up'>
+                  <p>项目名称：xxx</p>
+                  <p>价格：10000</p>
+              </div>
               <img src='./images/pencil.jpg' className="cases-img"/>
             </div>
           </div>
@@ -83,6 +94,23 @@ module.exports=React.createClass({
               <div className='cover'>
                 <p>项目名称：xxx</p>
                 <p>价格：10000</p>
+              </div>
+              <div className='mobile-cover hidden-md-up'>
+                  <p>项目名称：xxx</p>
+                  <p>价格：10000</p>
+              </div>
+              <img src='./images/pencil.jpg' className="cases-img"/>
+            </div>
+          </div>
+          <div className="col-xs-6 col-sm-6 col-md-3 col-xl-3 col-lg-3">
+            <div className='img-container'>
+              <div className='cover'>
+                <p>项目名称：xxx</p>
+                <p>价格：10000</p>
+              </div>
+              <div className='mobile-cover hidden-md-up'>
+                  <p>项目名称：xxx</p>
+                  <p>价格：10000</p>
               </div>
               <img src='./images/pencil.jpg' className="cases-img"/>
             </div>
