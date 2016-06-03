@@ -5,7 +5,7 @@ module.exports=React.createClass({
     return <div className='Submit'>
       <div className='container'>
         <h1 className='submit-text'>提交需求</h1>
-        <div className='row 3-icon'>
+        <div className='row'>
           <div className='col-md-4 col-lg-4 col-xl-4'>
             <img src='../images/web.png' className='img-rounded submit-img'></img>
             <button type="button" className="btn btn-primary submit-btn">网页</button>

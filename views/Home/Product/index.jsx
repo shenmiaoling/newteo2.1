@@ -8,10 +8,10 @@ module.exports=React.createClass({
       </div>
       <div className='container product-container'>
         <div className="row product-row">
-          <div className="col-xs-12 col-md-6 col-img">
+          <div className="col-xs-12 col-sm-12 col-md-6 col-xl-6 col-lg-6 product-col-img">
             <img src='./images/pencil.jpg' className="product-img"/>
           </div>
-          <div className="col-xs-12 col-md-6 col-img">
+          <div className="col-xs-12 col-sm-12 col-md-6 col-xl-6 col-lg-6 product-col-img">
             <img src='./images/pencil.jpg' className="product-img"/>
           </div>
         </div>

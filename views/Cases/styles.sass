@@ -1,26 +1,11 @@
-@media (max-width: 992px)
-  .case-label
-    font-size: 20px!important
-  .case-count
-    font-size: 16px!important
-@media (max-width: 384px)
-  .case-label
-    font-size: 10px
-  .case-count
-    font-size: 16px
-@media(min-width: 992px)
-  .case-label
-    font-size: 26px
-@media (max-width: 384px)
-  .case-label
-    font-size: 25px
-  .case-count
-    font-size: 20px
 .cases-navbar
   width: 100%
   height: 80px
   font-size: 18px
   background-color: white
+.case-txt .nav-inline
+  padding-left: 150px
+
 .nav-icon-all
   color: rgb(211,214,213)
 .nav-icon-all :hover
@@ -28,7 +13,7 @@
 .nav-item :hover
   color: rgb(211,214,213)
 .icon-all
-  margin-right: 30px
+  margin-right: 1em
   font-size: 35px!important
   color: inherit
 .icon-all :focus
@@ -42,9 +27,11 @@
   border-right: 2px solid #818A91
 .nav-txt
   color: rgb(211,214,213)!important
+.case-container
+  margin-top: 50px
+  margin-bottom: 50px
 .caselist
   background-color: white
-  margin-top: 50px
   padding-top: 50px
   padding-bottom: 50px
   border-radius: 10px
@@ -55,14 +42,14 @@
   &:hover
    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2)
 .case-label
-  font-size: 1em
+  font-size: 2em
   text-align: center
   padding-top: 30px
   color: rgb(202,129,0)
 .case-count
   text-align: center
-  font-size: 1em
-  padding-top: 30px
+  font-size: 2em
+  padding-top: 40px
   color: rgb(59,83,72)
 .img-bottom
   width: 70%
@@ -73,7 +60,7 @@
   padding-top: 20px
   text-align: center
   color: white
-  background-color: rgba(0,0,0,0.4)
+  background-color: rgba(57,83,72,0.66)
   &:hover
     box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2)
 .case-staus
@@ -81,3 +68,116 @@
   margin-top: -60px
   margin-right: 15px
   width: 25%
+@media (max-width: 600px)
+  .cases-navbar
+    height: 50px
+  .nav-inline
+    font-size: 20px
+  .case-count
+    font-size: 16px
+  .case-txt .nav-inline
+    padding-left: 10px
+  .nav-li
+    margin-right: 10px
+    padding-right: 10px
+    margin-top: 15px
+  .icon-all
+    font-size: 30px
+@media (max-width: 435px)
+  .cases-navbar
+    height: 45px
+  .nav-icon
+    font-size: 20px!important
+    margin-right: -15px
+  .icon-all
+    font-size: 25px!important
+    margin-right: 10px
+  .nav-inline
+    font-size: 10px
+    padding-top: 5px
+  .case-label
+    font-size: 18px!important
+  .case-count
+    font-size: 15px
+  .caselist
+    padding-top: 30px
+    padding-bottom: 30px
+  .case-staus
+    margin-top: -35px
+@media (max-width: 414px)
+  .cases-navbar
+    height: 45px
+  .nav-icon
+    font-size: 20px!important
+    margin-right: -15px
+  .icon-all
+    font-size: 25px!important
+    margin-right: 10px
+  .nav-inline
+    font-size: 10px
+    padding-top: 5px
+    margin-left: 20px
+  .case-label
+    font-size: 25px
+  .case-count
+    font-size: 15px
+    margin: -19px
+@media (max-width: 384px)
+  .cases-navbar
+    height: 45px
+  .nav-icon
+    font-size: 20px!important
+    margin-right: -15px
+  .icon-all
+    font-size: 25px!important
+    margin-right: 10px
+  .nav-inline
+    font-size: 10px
+    padding-top: 5px
+    margin-left: 20px
+  .case-label
+    font-size: 25px
+  .case-count
+    font-size: 20px
+@media (max-width: 375px)
+  .cases-navbar
+    height: 40px
+  .icon-all
+    font-size: 25px!important
+    margin-right: 10px
+  .nav-inline
+    font-size: 10px
+  .caselist
+    padding-top: 20px
+    padding-bottom: 10px
+  .case-label
+    font-size: 15px!important
+  .case-count
+    font-size: 10px!important
+  .case-staus
+    margin-top: -25px
+    margin-right: 15px
+@media (max-width: 360px)
+  .nav-inline
+    // margin-left: 20px
+  .case-label
+    font-size: 15px!important
+  .case-count
+    font-size: 10px
+@media (max-width: 320px)
+  .nav-icon
+    font-size: 18px!important
+    margin-right: -15px
+  .cases-navbar
+    height: 40px
+  .icon-all
+    font-size: 20px!important
+    margin-right: 10px
+  .nav-inline
+    font-size: 10px
+    padding-left: 10px
+  .case-label
+    font-size: 10px!important
+    width: 30px
+  .case-count
+    font-size: 10px

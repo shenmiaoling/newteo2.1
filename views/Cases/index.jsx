@@ -3,24 +3,26 @@ import {Link,IndexLink} from 'react-router'
 require ('./styles')
 module.exports = React.createClass({
   render(){
-    return <div className='cases'>
+    return <div>
       <div className='cases-navbar'>
-        <ul className="nav nav-inline container">
-          <li className="nav-item case-nav">
-            <Link to="/cases" className="nav-link nav-icon-all"><span className="iconfont all icon-all"></span></Link>
-          </li>
-          <li className="nav-item nav-li case-nav">
-            <Link to='/cases/web'className="nav-link nav-txt">网页</Link>
-          </li>
-          <li className="nav-item nav-li case-nav">
-            <Link to='/cases/app'className="nav-link nav-txt">软件</Link>
-          </li>
-          <li className="nav-item case-nav">
-            <Link to='/cases/wechat' className="nav-link nav-txt">微信</Link>
-          </li>
-        </ul>
+        <div className='case-txt'>
+          <ul className="nav nav-inline">
+            <li className="nav-item case-nav">
+              <Link to="/cases" className="nav-link nav-icon-all"><span className="iconfont all icon-all"></span></Link>
+            </li>
+            <li className="nav-item nav-li case-nav">
+              <Link to='/cases/web'className="nav-link nav-txt">网页</Link>
+            </li>
+            <li className="nav-item nav-li case-nav">
+              <Link to='/cases/app'className="nav-link nav-txt">软件</Link>
+            </li>
+            <li className="nav-item case-nav">
+              <Link to='/cases/wechat' className="nav-link nav-txt">微信</Link>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div className='container'>
+      <div className='container case-container'>
         <div className='caselist'>
           <div className='row'>
             <div className='col-lg-5 col-xl-5 col-xs-5 col-sm-5 col-md-5'>
