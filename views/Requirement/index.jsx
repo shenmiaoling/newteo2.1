@@ -2,8 +2,22 @@ import React from 'react'
 import {locales} from '../../settings'
 require('./styles')
 module.exports = React.createClass({
+  getInitialState(){
+    return{
+      defaultType: '',
+    }
+  },
+  handleSelect(event){
+    this.setState({
+      defaultType: event.target.value
+    })
+  },
   componentDidMount(){
     document.title = locales.zh_CN.requirement
+    window.scroll(null,0)
+    this.setState({
+      defaultType: this.props.location.query.type
+    })
   },
   render(){
     return <div className='container'>
@@ -13,22 +27,22 @@ module.exports = React.createClass({
             <div className='col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6'>
               <fieldset className="form-group item-style">
                 <label className='require-label'>项目类型</label>
-                <select className="form-control" id="exampleSelect1">
+                <select className="form-control" id="exampleSelect1" value={this.state.defaultType} onChange={this.handleSelect}>
                   <option>请选择</option>
-                  <option>Web网站</option>
-                  <option>移动应用APP</option>
-                  <option>微信开发</option>
+                  <option value='Web网站'>Web网站</option>
+                  <option value='移动应用APP'>移动应用APP</option>
+                  <option value='微信开发'>微信开发</option>
                 </select>
               </fieldset>
             </div>
             <div className='col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6'>
               <fieldset className="form-group item-style">
                 <label className='require-label'>项目预算</label>
-                <select className="form-control">
+                <select className="form-control" defaultValue='1.5万以下'>
                   <option>请选择</option>
-                  <option>1.5万以下</option>
-                  <option>1.5-3</option>
-                  <option>3万以上</option>
+                  <option value='1.5万以下'>1.5万以下</option>
+                  <option value='1.5-3万'>1.5-3万</option>
+                  <option value='3万以上'>3万以上</option>
                 </select>
               </fieldset>
             </div>

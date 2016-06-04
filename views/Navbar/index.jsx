@@ -6,15 +6,17 @@ import {
 import {locales} from '../../settings'
 require('./styles')
 module.exports = React.createClass({
-
   render() {
     const activeStyle = {borderBottom: '3px solid white',transition: 'all 0.2s ease-in'}
     return <div className={this.props.hasShadow ? 'navbar navbar-light bg-faded hidden-sm-down topbar navbar-fixed-top row' : 'navbar navbar-light bg-faded hidden-sm-down topbar-shadow navbar-fixed-top row'}>
-        <div className='col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2'>
-          <IndexLink to="/" className="navbar-brand"><img src='../../images/logo.png' className="navbar-img"></img></IndexLink>
+      <div className='container'>
+        <div className='col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 nav-logo'>
+          <div className='logo-img'>
+            <IndexLink to="/"><img src='../../images/logo.png' className="navbar-img"></img></IndexLink>
+          </div>
         </div>
         <div className='col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10'>
-          <ul className="nav nav-inline nav-inline">
+          <ul className="nav nav-inline">
             <li className="nav-item">
               <Link to="/evaluation" className="nav-link navbar-text" activeStyle={activeStyle}>{locales.zh_CN.evaluation}</Link>
             </li>
@@ -36,5 +38,6 @@ module.exports = React.createClass({
           </ul>
         </div>
       </div>
+    </div>
   }
 })

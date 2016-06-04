@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router'
 require('./styles')
 module.exports=React.createClass({
   render(){
@@ -9,15 +10,21 @@ module.exports=React.createClass({
           <div className='row'>
             <div className='col-md-4 col-lg-4 col-xl-4'>
               <img src='../images/web.png' className='img-rounded submit-img'></img>
-              <button type="button" className="btn btn-primary submit-btn">网页</button>
+              <Link to='/requirement?type=Web网站'>
+                <button type="button" className="btn btn-primary submit-btn">网页</button>
+              </Link>
             </div>
             <div className='col-md-4 col-lg-4 col-xl-4'>
               <img src='../images/APP.png' className='img-rounded submit-img'></img>
-              <button type="button" className="btn btn-primary submit-btn">软件</button>
+              <Link to='/requirement?type=移动应用APP'>
+                <button type="button" className="btn btn-primary submit-btn">软件</button>
+              </Link>
             </div>
             <div className='col-md-4 col-lg-4 col-xl-4'>
               <img src='../images/wechat.png' className='img-rounded submit-img'></img>
-              <button type="button" className="btn btn-primary submit-btn">微信</button>
+              <Link to='/requirement?type=微信开发'>
+                <button type="button" className="btn btn-primary submit-btn">微信</button>
+              </Link>
             </div>
           </div>
         </div>

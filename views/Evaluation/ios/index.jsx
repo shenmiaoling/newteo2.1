@@ -249,7 +249,7 @@ module.exports = React.createClass({
           <button type="button" className="btn btn-primary submit-btn evaluation-btn table-btn">清除选项</button>
         </div>
         <div className='col-xs-6 col-sm-6 col-md-6 col-xl-6 col-lg-6'>
-          <Link to='/evaluation/wechat/result'>
+          <Link to='/evaluation/ios/result'>
             <button type="button" className="btn btn-primary submit-btn evaluation-btn table-btn count-result-btn"><span className='table-btn-txt'>计算结果</span></button>
           </Link>
         </div>

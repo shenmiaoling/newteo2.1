@@ -209,7 +209,9 @@ module.exports = React.createClass({
       </table>
       <div className='row'>
         <div className='col-xs-6 col-sm-6 col-md-6 col-xl-6 col-lg-6'>
-          <button type="button" className="btn btn-primary evaluation-btn submit-btn table-btn">清除选项</button>
+          <button type="button" className="btn btn-primary evaluation-btn submit-btn table-btn" onClick={()=>{
+              window.location.reload()
+          }}>清除选项</button>
         </div>
         <div className='col-xs-6 col-sm-6 col-md-6 col-xl-6 col-lg-6'>
           <Link to='/evaluation/wechat/result'>
