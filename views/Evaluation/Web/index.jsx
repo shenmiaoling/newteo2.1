@@ -47,7 +47,7 @@ module.exports = React.createClass({
                         {
                           item2.options.map((item3, index3) => {
                             return(
-                              <Checkbox key={index3} label={item3.name}/>
+                              <Checkbox key={index3} label={item3.name} updateCount={this.updateCount}/>
                               )
                           })
                         }
@@ -65,7 +65,9 @@ module.exports = React.createClass({
       </table>
       <div className='row'>
         <div className='col-xs-6 col-sm-6 col-md-6 col-xl-6 col-lg-6'>
-          <button type="button" className="btn btn-primary submit-btn evaluation-btn table-btn">清除选项</button>
+          <button type="button" className="btn btn-primary submit-btn evaluation-btn table-btn" onClick={()=>{
+              window.location.reload()
+          }}>清除选项</button>
         </div>
         <div className='col-xs-6 col-sm-6 col-md-6 col-xl-6 col-lg-6'>
           <Link to='/evaluation/web/result'>

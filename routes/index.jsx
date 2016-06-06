@@ -37,17 +37,8 @@ module.exports = ()=>{
       <Route path='evaluation/wechat' component={Wechat}/>
       <Route path='evaluation/wechat/result' component={Result}/>
       <Route path='requirement' component={Requirement}/>
-      <Route path='cases' component={Cases}>
-        <Route path='web' component={Webcase}>
-          <Route path='case' component={Case}/>
-        </Route>
-        <Route path='app' component={Appcase}>
-          <Route path='case' component={Case}/>
-        </Route>
-        <Route path='wechat' component={Wechatcase}>
-          <Route path='case' component={Case}/>
-        </Route>
-      </Route>
+      <Route path='cases' component={Cases}/>
+      <Route path='cases/:id' component={Case}/>
       <Route path='product' component={Product}/>
       <Route path='team' component={Team}/>
       <Route path='contact' component={Contact}/>

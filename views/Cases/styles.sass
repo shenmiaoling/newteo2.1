@@ -3,6 +3,9 @@
   height: 80px
   font-size: 18px
   background-color: white
+  // position: fixed
+  // z-index: 100
+  // margin-top: -50px
 .case-txt .nav-inline
   padding-left: 150px
 .nav-icon-all
@@ -33,6 +36,7 @@
   background-color: white
   padding-top: 50px
   padding-bottom: 50px
+  margin-bottom: 50px
   border-radius: 10px
 .case-image-container:hover .case-image
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2)
@@ -43,7 +47,7 @@
 .case-label
   font-size: 2em
   text-align: center
-  padding-top: 70px
+  padding-top: 30px
   color: rgb(202,129,0)
 .case-count
   text-align: center
@@ -53,15 +57,18 @@
 .img-bottom
   position: absolute
   width: 65%
-  height: 60px
+  height: 36%
   font-size: 1em
   display: block
   margin: 0 auto
   right: 0
   left: 0
   bottom: 0
-  padding-top: 20px
+  padding-top: 15px
   text-align: center
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
   color: white
   background-color: rgba(57,83,72,0.66)
 .case-staus
@@ -70,11 +77,32 @@
   margin-right: 15px
   width: 25%
 @media (max-width: 800px)
+  .cases-navbar
+    height: 55px
+  .nav-li
+    margin-top: 0
+  .case-txt .nav-inline
+    padding-left: 70px
   .case-label
-    padding-top: 20px!important
+    padding-top: 20px
+  .case-count
+    font-size: 25px
+  .img-bottom
+    padding-top: 8px
+    width: 64%
+@media (max-width: 768px)
+  .img-bottom
+    padding-top: 6px!important
+    width: 62%
+    font-size: 11px
+  .caselist
+    padding-top: 40px!important
+    padding-bottom: 20px!important
 @media (max-width: 600px)
+
   .case-label
     padding-top: 15px
+    font-size: 18px
   .cases-navbar
     height: 50px
   .nav-inline
@@ -82,6 +110,7 @@
   .case-count
     font-size: 16px
     text-align: center
+    padding-top: 16px
   .case-txt .nav-inline
     padding-left: 10px
   .nav-li
@@ -107,13 +136,14 @@
     font-size: 18px!important
   .case-count
     font-size: 15px
-    padding-top: 20px
-  .caselist
-    padding-top: 30px
-    padding-bottom: 30px
+    // padding-top: 20px
+
   .case-staus
     margin-top: -35px
-@media (max-width: 414px)
+  .img-bottom
+    padding-top: 3px!important
+    width: 59%
+@media (max-width: 411px)
   .cases-navbar
     height: 45px
   .nav-icon
@@ -122,12 +152,16 @@
   .icon-all
     font-size: 25px!important
     margin-right: 10px
+  .caselist
+    padding-bottom: 30px
   .nav-inline
     font-size: 10px
     padding-top: 5px
     margin-left: 20px
   .case-label
-    font-size: 25px
+    font-size: 15px!important
+    padding-top: 10px
+    padding-bottom: 10px
   .case-count
     font-size: 15px
     margin: -19px
@@ -145,7 +179,7 @@
     padding-top: 5px
     margin-left: 20px
   .case-label
-    font-size: 25px
+    padding-top: 5px
   .case-count
     font-size: 20px
 @media (max-width: 375px)
@@ -158,7 +192,7 @@
     font-size: 10px
   .caselist
     padding-top: 20px
-    padding-bottom: 10px
+    padding-bottom: 20px
   .case-label
     font-size: 15px!important
   .case-count
@@ -166,19 +200,28 @@
   .case-staus
     margin-top: -25px
     margin-right: 15px
+  .img-bottom
+    width: 56%
 @media (max-width: 360px)
+  .case-image
+    // padding-top: 10px
   .nav-inline
     // margin-left: 20px
   .case-label
     font-size: 15px!important
   .case-count
     font-size: 10px
+  .img-bottom
+    padding-top: 0!important
+    width: 56%
 @media (max-width: 320px)
   .nav-icon
     font-size: 18px!important
     margin-right: -15px
   .cases-navbar
-    height: 40px
+    height: 35px
+  .nav-li
+    margin-top: 0
   .icon-all
     font-size: 20px!important
     margin-right: 10px
@@ -190,3 +233,10 @@
     width: 30px
   .case-count
     font-size: 10px
+    padding-bottom: 30px
+  .img-bottom
+    width: 54%
+  .caselist
+    padding-top: 25px
+    padding-bottom: 15px
+    margin-bottom: 30px
