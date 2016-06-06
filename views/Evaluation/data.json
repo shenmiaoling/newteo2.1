@@ -4,6 +4,7 @@
     "children": [
       {
         "name": "基本功能",
+        "count": 4,
         "title": "注册登录",
         "children": [
           {
@@ -82,6 +83,7 @@
       },
       {
         "name": null,
+        "count": 4,
         "title": "第三方登录",
         "children": [
           {
@@ -142,6 +144,7 @@
       },
       {
         "name": null,
+        "count": 4,
         "title": "用户中心",
         "children": [
           {
@@ -208,6 +211,7 @@
       },
       {
         "name": null,
+        "count": 4,
         "title": "主内容展示",
         "children": [
           {
@@ -298,6 +302,7 @@
       },
       {
         "name": "高级功能",
+        "count": 10,
         "title": "通知推送方式",
         "children": [
           {
@@ -352,6 +357,7 @@
       },
       {
         "name": null,
+        "count": 10,
         "title": "高级搜索",
         "children": [
           {
@@ -412,6 +418,7 @@
       },
       {
         "name": null,
+        "count": 10,
         "title": "主内容相关",
         "children": [
           {
@@ -442,6 +449,7 @@
       },
       {
         "name": null,
+        "count": 10,
         "title": "客户服务",
         "children": [
           {
@@ -460,6 +468,7 @@
       },
       {
         "name": null,
+        "count": 10,
         "title": "推广",
         "children": [
           {
@@ -490,6 +499,7 @@
       },
       {
         "name": null,
+        "count": 10,
         "title": "音乐/视频",
         "children": [
           {
@@ -532,86 +542,103 @@
       },
       {
         "name": null,
+        "count": 10,
         "title": "广告位",
         "children": []
       },
       {
         "name": null,
+        "count": 10,
         "title": "文件管理",
         "children": []
       },
       {
         "name": null,
+        "count": 10,
         "title": "高级用户中心",
         "children": []
       },
       {
         "name": null,
+        "count": 10,
         "title": "位置服务",
         "children": []
       },
       {
         "name": "电商功能",
+        "count": 7,
         "title": "商品相关",
         "children": []
       },
       {
         "name": null,
+        "count": 7,
         "title": "活动优惠",
         "children": []
       },
       {
         "name": null,
+        "count": 7,
         "title": "积分系统",
         "children": []
       },
       {
         "name": null,
+        "count": 7,
         "title": "评价系统",
         "children": []
       },
       {
         "name": null,
+        "count": 7,
         "title": "配送管理",
         "children": []
       },
       {
         "name": null,
+        "count": 7,
         "title": "订单管理",
         "children": []
       },
       {
         "name": null,
+        "count": 7,
         "title": "支付",
         "children": []
       },
       {
         "name": "社交功能",
+        "count": 1,
         "title": "分享",
         "children": []
       },
       {
         "name": "其它",
+        "count": 5,
         "title": "UI设计（单选）",
         "children": []
       },
       {
         "name": null,
+        "count": 5,
         "title": "统计分析",
         "children": []
       },
       {
         "name": null,
+        "count": 5,
         "title": "桌面端分辨率支持（宽度）",
         "children": []
       },
       {
         "name": null,
+        "count": 5,
         "title": "移动端响应式",
         "children": []
       },
       {
         "name": null,
+        "count": 5,
         "title": "浏览器兼容性",
         "children": []
       }
@@ -622,6 +649,7 @@
     "children": [
       {
         "name": "基本功能",
+        "count": 5,
         "title": "通用",
         "children": [
           {
@@ -718,6 +746,7 @@
       },
       {
         "name": null,
+        "count": 5,
         "title": "注册登录",
         "children": [
           {
@@ -784,6 +813,7 @@
       },
       {
         "name": null,
+        "count": 5,
         "title": "第三方登录",
         "children": [
           {
@@ -844,6 +874,7 @@
       },
       {
         "name": null,
+        "count": 5,
         "title": "用户中心",
         "children": [
           {
@@ -928,6 +959,7 @@
       },
       {
         "name": null,
+        "count": 5,
         "title": "主内容展示",
         "children": [
           {
@@ -994,6 +1026,7 @@
       },
       {
         "name": "高级功能",
+        "count": 10,
         "title": "通知推送方式",
         "children": [
           {
@@ -1054,6 +1087,7 @@
       },
       {
         "name": null,
+        "count": 10,
         "title": "高级搜索",
         "children": [
           {
@@ -1084,6 +1118,7 @@
       },
       {
         "name": null,
+        "count": 10,
         "title": "主内容相关",
         "children": [
           {
@@ -1108,6 +1143,7 @@
       },
       {
         "name": null,
+        "count": 10,
         "title": "客户服务",
         "children": [
           {
@@ -1138,6 +1174,7 @@
       },
       {
         "name": null,
+        "count": 10,
         "title": "推广",
         "children": [
           {
@@ -1174,96 +1211,115 @@
       },
       {
         "name": null,
+        "count": 10,
         "title": "音乐/视频",
         "children": []
       },
       {
         "name": null,
+        "count": 10,
         "title": "广告位",
         "children": []
       },
       {
         "name": null,
+        "count": 10,
         "title": "文件管理",
         "children": []
       },
       {
         "name": null,
+        "count": 10,
         "title": "高级用户中心",
         "children": []
       },
       {
         "name": null,
+        "count": 10,
         "title": "位置服务",
         "children": []
       },
       {
         "name": "电商功能",
+        "count": 7,
         "title": "商品相关",
         "children": []
       },
       {
         "name": null,
+        "count": 7,
         "title": "活动优惠",
         "children": []
       },
       {
         "name": null,
+        "count": 7,
         "title": "积分系统",
         "children": []
       },
       {
         "name": null,
+        "count": 7,
         "title": "评价系统",
         "children": []
       },
       {
         "name": null,
+        "count": 7,
         "title": "配送管理",
         "children": []
       },
       {
         "name": null,
+        "count": 7,
         "title": "订单管理",
         "children": []
       },
       {
         "name": null,
+        "count": 7,
         "title": "支付",
         "children": []
       },
       {
         "name": "社交功能",
+        "count": 3,
         "title": "即时通讯",
         "children": []
       },
       {
         "name": null,
+        "count": 3,
         "title": "分享",
         "children": []
       },
       {
         "name": null,
+        "count": 3,
         "title": "论坛社区",
         "children": []
       },
       {
         "name": "其它",
+        "count": 4,
         "title": "原型设计（单选）",
         "children": []
       },
       {
         "name": null,
+        "count": 4,
         "title": "统计分析",
         "children": []
       },
       {
         "name": null,
+        "count": 4,
         "title": "设备兼容性",
         "children": []
       },
       {
         "name": null,
+        "count": 4,
         "title": "多客户端",
         "children": []
       }
@@ -1274,6 +1330,7 @@
     "children": [
       {
         "name": "基础功能",
+        "count": 5,
         "title": "注册登录",
         "children": [
           {
@@ -1328,6 +1385,7 @@
       },
       {
         "name": null,
+        "count": 5,
         "title": "主内容展示",
         "children": [
           {
@@ -1370,6 +1428,7 @@
       },
       {
         "name": null,
+        "count": 5,
         "title": "功能列表",
         "children": [
           {
@@ -1412,6 +1471,7 @@
       },
       {
         "name": null,
+        "count": 5,
         "title": "用户中心",
         "children": [
           {
@@ -1472,6 +1532,7 @@
       },
       {
         "name": null,
+        "count": 5,
         "title": "主内容展示",
         "children": [
           {
@@ -1526,6 +1587,7 @@
       },
       {
         "name": "高级功能",
+        "count": 11,
         "title": "交互",
         "children": [
           {
@@ -1556,6 +1618,7 @@
       },
       {
         "name": null,
+        "count": 11,
         "title": "小游戏",
         "children": [
           {
@@ -1604,6 +1667,7 @@
       },
       {
         "name": null,
+        "count": 11,
         "title": "通知推送",
         "children": [
           {
@@ -1616,6 +1680,7 @@
       },
       {
         "name": null,
+        "count": 11,
         "title": "高级搜索",
         "children": [
           {
@@ -1634,6 +1699,7 @@
       },
       {
         "name": null,
+        "count": 11,
         "title": "主内容相关",
         "children": [
           {
@@ -1664,6 +1730,7 @@
       },
       {
         "name": null,
+        "count": 11,
         "title": "推广",
         "children": [
           {
@@ -1706,86 +1773,103 @@
       },
       {
         "name": null,
+        "count": 11,
         "title": "音乐/视频",
         "children": []
       },
       {
         "name": null,
+        "count": 11,
         "title": "广告位",
         "children": []
       },
       {
         "name": null,
+        "count": 11,
         "title": "文件管理",
         "children": []
       },
       {
         "name": null,
+        "count": 11,
         "title": "高级用户中心",
         "children": []
       },
       {
         "name": null,
+        "count": 11,
         "title": "位置服务",
         "children": []
       },
       {
         "name": "电商功能",
+        "count": 7,
         "title": "商品相关",
         "children": []
       },
       {
         "name": null,
+        "count": 7,
         "title": "活动优惠",
         "children": []
       },
       {
         "name": null,
+        "count": 7,
         "title": "积分系统",
         "children": []
       },
       {
         "name": null,
+        "count": 7,
         "title": "评价系统",
         "children": []
       },
       {
         "name": null,
+        "count": 7,
         "title": "配送管理",
         "children": []
       },
       {
         "name": null,
+        "count": 7,
         "title": "订单管理",
         "children": []
       },
       {
         "name": null,
+        "count": 7,
         "title": "支付",
         "children": []
       },
       {
         "name": "社交功能",
+        "count": 2,
         "title": "分享",
         "children": []
       },
       {
         "name": null,
+        "count": 2,
         "title": "论坛社区",
         "children": []
       },
       {
         "name": "其它",
+        "count": 3,
         "title": "UI设计（单选）",
         "children": []
       },
       {
         "name": null,
+        "count": 3,
         "title": "统计分析",
         "children": []
       },
       {
         "name": null,
+        "count": 3,
         "title": "移动端响应式",
         "children": []
       }
