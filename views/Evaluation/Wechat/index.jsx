@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router'
 import Checkbox from '../checkbox'
-import { wechatOptions } from '../sources'
+const wechatOptions = require('json!../data').wechatOptions
 require('./styles')
 module.exports = React.createClass({
   getInitialState(){
@@ -37,24 +37,21 @@ module.exports = React.createClass({
         </thead>
         <tbody>
           {
-            wechatOptions.map((item, index) => {
-              return item.map((item2, index2) => {
-                return (
-                    <tr key={index2}>
-                      {item2.part ? <th scope="row" rowSpan={item.length} className='category'>{item2.part}</th> : null}
-                      <td className='model'>{item2.section}</td>
-                      <td>
-                        {
-                          item2.options.map((item3, index3) => {
-                            return(
-                              <Checkbox key={index3} label={item3.name} updateCount={this.updateCount}/>
-                              )
-                          })
-                        }
-                      </td>
-                    </tr>
-                  )
-              })
+            wechatOptions.children.map((item, index) => {
+              return <tr key={index} className={item.children.length==0? 'hidden-xl-down':'ha'}>
+                {item.name ? <th scope="row" rowSpan={item.count} className='category'>{item.name}</th> : null}
+                  <td className='model'>{item.title}</td>
+                  <td>
+                  {
+                    item.children.map((item2, index2) => {
+                      return(
+                        <Checkbox key={index2} label={item2.title} updateCount={this.updateCount}/>
+                        )
+                    })
+                  }
+                </td>
+                </tr>
+
             })
           }
           <tr>

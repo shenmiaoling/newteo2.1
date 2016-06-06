@@ -17,8 +17,8 @@ module.exports = React.createClass({
     })
   },
   render(){
-    return <label className="checkbox-inline">
-      <input type="checkbox" id="inlineCheckbox1" onChange={this.handleChange} checked={this.state.checked} onClick={this.handleClick} value="option1"/>{this.props.label}
+    return <label className="checkbox-check">
+      <input type="checkbox"  onChange={this.handleChange} checked={this.state.checked} onClick={this.handleClick} value="option1"/>{this.props.label}
     </label>
   }
 })

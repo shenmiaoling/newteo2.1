@@ -34,7 +34,7 @@ module.exports=React.createClass({
           </div>
           <div className='col-lg-6 col-xl-6 col-xs-6 col-sm-6 col-md-6'>
             <div className='info-wechat'>
-              <img src='./images/wechat-code.jpg' className='wechat-code img-thumbnail'/>
+              <img src='/images/wechat-code.jpg' className='wechat-code img-thumbnail'/>
               <p className='code-text'>公众号</p>
             </div>
           </div>
