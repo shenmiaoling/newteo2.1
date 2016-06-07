@@ -1,7 +1,24 @@
 import React from 'react'
+import { Link } from 'react-router'
 import superagent from 'superagent'
+import apis from '../../../apis'
 require('./styles')
 module.exports=React.createClass({
+  getInitialState(){
+    return{
+      cases: []
+    }
+  },
+
+  componentDidMount(){
+    superagent.get(apis.demos).end((err,response)=>{
+      let results = response.body.splice(0,8)
+      this.setState({
+        cases: results
+      })
+    })
+  },
+
   render(){
     return <div className='Cases'>
       <div className='case-text-center'>
@@ -9,104 +26,24 @@ module.exports=React.createClass({
       </div>
       <div className='container cases-container'>
         <div className="row">
-          <div className="col-xs-6 col-sm-6 col-md-3 col-xl-3 col-lg-3">
-            <div className='img-container '>
-              <div className='cover hidden-md-down'>
-                <p>项目名称：xxx</p>
-                <p>价格：10000</p>
-              </div>
-              <img src='./images/pencil.jpg' className="cases-img"/>
-              <div className='mobile-cover hidden-md-up'>
-                  <p>项目名称：xxx</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-xs-6 col-sm-6 col-md-3 col-xl-3 col-lg-3">
-            <div className='img-container'>
-              <div className='cover hidden-md-down'>
-                <p>项目名称：xxx</p>
-                <p>价格：10000</p>
-              </div>
-              <div className='mobile-cover hidden-md-up'>
-                  <p>项目名称：xxx</p>
-              </div>
-              <img src='./images/pencil.jpg' className="cases-img"/>
-            </div>
-          </div>
-          <div className="col-xs-6 col-sm-6 col-md-3 col-xl-3 col-lg-3">
-            <div className='img-container'>
-              <div className='cover hidden-md-down'>
-                <p>项目名称：xxx</p>
-                <p>价格：10000</p>
-              </div>
-              <div className='mobile-cover hidden-md-up'>
-                  <p>项目名称：xxx</p>
-              </div>
-              <img src='./images/pencil.jpg' className="cases-img"/>
-            </div>
-          </div>
-          <div className="col-xs-6 col-sm-6 col-md-3 col-xl-3 col-lg-3">
-            <div className='img-container'>
-              <div className='cover hidden-md-down'>
-                <p>项目名称：xxx</p>
-                <p>价格：10000</p>
-              </div>
-              <div className='mobile-cover hidden-md-up'>
-                  <p>项目名称：xxx</p>
-              </div>
-              <img src='./images/pencil.jpg' className="cases-img"/>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-xs-6 col-sm-6 col-md-3 col-xl-3 col-lg-3">
-            <div className='img-container'>
-              <div className='cover hidden-md-down'>
-                <p>项目名称：xxx</p>
-                <p>价格：10000</p>
-              </div>
-              <div className='mobile-cover hidden-md-up'>
-                  <p>项目名称：xxx</p>
-              </div>
-              <img src='./images/pencil.jpg' className="cases-img"/>
-            </div>
-          </div>
-          <div className="col-xs-6 col-sm-6 col-md-3 col-xl-3 col-lg-3">
-            <div className='img-container'>
-              <div className='cover hidden-md-down'>
-                <p>项目名称：xxx</p>
-                <p>价格：10000</p>
-              </div>
-              <div className='mobile-cover hidden-md-up'>
-                  <p>项目名称：xxx</p>
-              </div>
-              <img src='./images/pencil.jpg' className="cases-img"/>
-            </div>
-          </div>
-          <div className="col-xs-6 col-sm-6 col-md-3 col-xl-3 col-lg-3">
-            <div className='img-container'>
-              <div className='cover hidden-md-down'>
-                <p>项目名称：xxx</p>
-                <p>价格：10000</p>
-              </div>
-              <div className='mobile-cover hidden-md-up'>
-                  <p>项目名称：xxx</p>
-              </div>
-              <img src='./images/pencil.jpg' className="cases-img"/>
-            </div>
-          </div>
-          <div className="col-xs-6 col-sm-6 col-md-3 col-xl-3 col-lg-3">
-            <div className='img-container'>
-              <div className='cover hidden-md-down'>
-                <p>项目名称：xxx</p>
-                <p>价格：10000</p>
-              </div>
-              <div className='mobile-cover hidden-md-up'>
-                  <p>项目名称：xxx</p>
-              </div>
-              <img src='./images/pencil.jpg' className="cases-img"/>
-            </div>
-          </div>
+          { this.state.cases.map((item, index) => {
+            return(
+              <Link key={index}  to={`/cases/${item.objectId}`}>
+                <div className="col-xs-6 col-sm-6 col-md-3 col-xl-3 col-lg-3">
+                  <div className='img-container '>
+                    <div className='cover hidden-md-down'>
+                      <p>项目名称：{item.title}</p>
+                      <p>价格：¥ {item.price}</p>
+                    </div>
+                    <img src={`${item.pics[0].url}?imageView2/1/w/235/h/165`} className="cases-img"/>
+                    <div className='mobile-cover hidden-md-up'>
+                      <p>项目名称：{item.title}</p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+              )
+          })}
         </div>
       </div>
     </div>

@@ -36,9 +36,6 @@ module.exports = React.createClass({
                 <Link to="/product" className="nav-link nav-text" onClick={this.handleClick}>{locales.zh_CN.product}</Link>
               </li>
               <li className="nav-item">
-                <Link to="/team" className="nav-link nav-text" onClick={this.handleClick}>{locales.zh_CN.team}</Link>
-              </li>
-              <li className="nav-item">
                 <Link to="/contact" className="nav-link nav-text" onClick={this.handleClick}>{locales.zh_CN.contact}</Link>
               </li>
             </ul>

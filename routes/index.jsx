@@ -9,7 +9,6 @@ import Application from '../views/app'
 import Home from '../views/Home'
 import NotFound from '../views/404'
 import Cases from '../views/Cases'
-import Team from '../views/Team'
 import Contact from '../views/Contact'
 import Case from '../views/Cases/Case'
 import Webcase from '../views/Cases/Web'
@@ -40,7 +39,6 @@ module.exports = ()=>{
       <Route path='cases' component={Cases}/>
       <Route path='cases/:id' component={Case}/>
       <Route path='product' component={Product}/>
-      <Route path='team' component={Team}/>
       <Route path='contact' component={Contact}/>
       <Route path='*' component={NotFound}/>
     </Route>
