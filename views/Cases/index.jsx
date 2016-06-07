@@ -9,8 +9,17 @@ module.exports = React.createClass({
       cases: []
     }
   },
-  componentDidMount(){
-    superagent.get(apis.demos).end((err,response)=>{
+  componentWillMount(){
+    const query = this.props.location.search
+    superagent.get(apis.demos + query).end((err,response)=>{
+      this.setState({
+        cases: response.body
+      })
+    })
+  },
+  componentWillReceiveProps(nextProps){
+    const query = nextProps.location.search
+    superagent.get(apis.demos + query).end((err,response)=>{
       this.setState({
         cases: response.body
       })
@@ -26,13 +35,13 @@ module.exports = React.createClass({
                 <Link to="/cases" className="nav-link nav-icon-all"><span className="iconfont all icon-all"></span></Link>
               </li>
               <li className="nav-item nav-li case-nav">
-                <Link to='/cases/?subject=web'className="nav-link nav-txt">网页</Link>
+                <Link to='/cases/?subject=网站'className="nav-link nav-txt">网页</Link>
               </li>
               <li className="nav-item nav-li case-nav">
-                <Link to='/cases/?subject=app'className="nav-link nav-txt">软件</Link>
+                <Link to='/cases/?subject=移动应用'className="nav-link nav-txt">软件</Link>
               </li>
               <li className="nav-item case-nav">
-                <Link to='/cases/?subject=wechat' className="nav-link nav-txt">微信</Link>
+                <Link to='/cases/?subject=微信公众号' className="nav-link nav-txt">微信</Link>
               </li>
             </ul>
           </div>

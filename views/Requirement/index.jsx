@@ -5,7 +5,7 @@ import superagent from 'superagent'
 require('./styles')
 module.exports = React.createClass({
   getInitialState(){
-    return{
+    return {
       subject: '',
       budget: '',
       title: '',
