@@ -18,6 +18,9 @@ module.exports = {
       settings: '设置',
       password: '密码',
       username: '用户名',
+      address: '潮州市庵埠镇竹围工业区100号',
+      email: 'info@newteo.com',
+      phone_number: '0768-2637496',
       login_errors: [
         '用户名、密码不能为空',
         '用户名、密码不一致'

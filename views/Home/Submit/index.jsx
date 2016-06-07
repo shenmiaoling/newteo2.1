@@ -33,15 +33,20 @@ module.exports=React.createClass({
       <div className='container hidden-md-up'>
         <div className='row'>
           <div className='col-md-4 col-xs-4 col-sm-4'>
-            <img src='../images/web2.png' className='mobile-submit-img'></img>
+            <Link to='/requirement?type=Web网站'>
+              <img src='../images/web2.png' className='mobile-submit-img'></img>
+            </Link>
             <p className='submit-intro'>网页</p>
           </div>
           <div className='col-md-4 col-xs-4 col-sm-4'>
-            <img src='../images/app2.png' className='mobile-submit-img'></img>
+            <Link to='/requirement?type=移动应用APP'>
+              <img src='../images/app2.png' className='mobile-submit-img'></img></Link>
             <p className='submit-intro'>软件</p>
           </div>
           <div className='col-md-4 col-xs-4 col-sm-4'>
-            <img src='../images/wechat2.png' className='mobile-submit-img'></img>
+            <Link to='/requirement?type=微信开发'>
+              <img src='../images/wechat2.png' className='mobile-submit-img'></img>
+            </Link>
             <p className='submit-intro'>微信</p>
           </div>
         </div>
