@@ -45,7 +45,7 @@ module.exports = React.createClass({
                   {
                     item.children.map((item2, index2) => {
                       return(
-                        <Checkbox key={index2} label={item2.title} updateCount={this.updateCount}/>
+                        <Checkbox key={index2} label={item2.title} updateCount={this.updateCount} description={item2.description}/>
                         )
                     })
                   }
@@ -66,7 +66,7 @@ module.exports = React.createClass({
           }}>清除选项</button>
         </div>
         <div className='col-xs-6 col-sm-6 col-md-6 col-xl-6 col-lg-6'>
-          <Link to='/evaluation/ios/result'>
+          <Link to='/evaluation/wechat/result'>
             <button type="button" className="btn btn-primary submit-btn evaluation-btn table-btn count-result-btn"><span className='table-btn-txt'>计算结果</span></button>
           </Link>
         </div>

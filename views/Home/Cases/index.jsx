@@ -12,10 +12,13 @@ module.exports=React.createClass({
 
   componentDidMount(){
     superagent.get(apis.demos).end((err,response)=>{
-      let results = response.body.splice(0,8)
-      this.setState({
-        cases: results
-      })
+      if(err==null){
+          this.setState({
+            cases: response ? response.body : []
+        })
+      }
+
+      console.log([response.body, err])
     })
   },
 

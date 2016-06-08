@@ -41,3 +41,28 @@ a:hover
 .checkbox-check
   margin-left: 0!important
   font-size: 13px
+  position: relative
+.checkbox-check:after
+  content: ''
+  position: absolute
+  border: 8px solid transparent
+  width: 0
+  height: 0
+  border-bottom-color: #373A3C
+  left: 35px
+  top: 15px
+  display: none
+.checkbox-check .description
+  background-color: #373A3C
+  position: absolute
+  top: 31px
+  left: 15px
+  color: white
+  padding: 5px 5px
+  min-width: 200px
+  display: none
+  z-index: 100
+.checkbox-check:hover .description
+  display: block
+.checkbox-check:hover:after
+  display: block

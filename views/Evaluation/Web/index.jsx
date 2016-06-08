@@ -1,13 +1,27 @@
 import React from 'react'
 import {Link} from 'react-router'
 import Checkbox from '../checkbox'
+import _ from 'underscore'
 const webOptions = require('json!../data').webOptions
 require('./styles')
 module.exports = React.createClass({
   getInitialState(){
     return{
-      checkboxCount: 0
+      checkboxCount: 0,
+      evaluationArray:[],
     }
+  },
+  addEvaluation(result){
+    this.setState({
+      evaluationArray: this.state.evaluationArray.concat([result])
+    },()=>{console.log(this.state.evaluationArray)})
+  },
+  removeEvaluation(result){
+    const evaluationArray = this.state.evaluationArray.filter((item)=>{return item.id != result.id})
+    this.setState({
+      evaluationArray: evaluationArray
+    },()=>{console.log(this.state.evaluationArray)})
+
   },
   updateCount(num=0){
     this.setState({
@@ -45,7 +59,8 @@ module.exports = React.createClass({
                   {
                     item.children.map((item2, index2) => {
                       return(
-                        <Checkbox key={index2} label={item2.title} updateCount={this.updateCount}/>
+                        <Checkbox key={index2} label={item2.title} updateCount={this.updateCount} description={item2.description} addEvaluation={this.addEvaluation} item={item2}
+                          removeEvaluation={this.removeEvaluation}/>
                         )
                     })
                   }
@@ -67,7 +82,7 @@ module.exports = React.createClass({
           }}>清除选项</button>
         </div>
         <div className='col-xs-6 col-sm-6 col-md-6 col-xl-6 col-lg-6'>
-          <Link to='/evaluation/web/result'>
+          <Link to={`/evaluation/wechat/result?total=${_.reduce(this.state.evaluationArray,(x,y)=>{return x.price+y.price},0)}&count=${this.state.evaluationArray.length}`}>
             <button type="button" className="btn btn-primary submit-btn evaluation-btn table-btn count-result-btn"><span className='table-btn-txt'>计算结果</span></button>
           </Link>
         </div>

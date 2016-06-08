@@ -17,9 +17,9 @@ module.exports = React.createClass({
             <img src='/images/pencil.jpg' className='product-image'/>
             <div className='product-content'>
               <p className='product-text'>主体内容包含但不限：</p>
-              <p className='product-text-content'>React,ReactNative,ReactRouter,Redux,Relay...等React周边ecosytem的泛社区</p>
+              <p className='product-text-content'>就是的卡上的和任务接客户回家撒复合弓还是给大家发货黄金咖啡几乎覆盖</p>
               <p className='product-text'>主体内容包含但不限：</p>
-              <p className='product-text-content'>React,ReactNative,ReactRouter,Redux,Relay...等React周边ecosytem的泛社区</p>
+              <p className='product-text-content'>就是的卡上的和任务接客户回家撒复合弓还是给大家发货黄金咖啡几乎覆盖</p>
             </div>
         </div>
       </div>

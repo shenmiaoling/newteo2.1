@@ -45,7 +45,7 @@ module.exports = React.createClass({
                   {
                     item.children.map((item2, index2) => {
                       return(
-                        <Checkbox key={index2} label={item2.title} updateCount={this.updateCount}/>
+                        <Checkbox key={index2} label={item2.title} updateCount={this.updateCount} description={item2.description}/>
                         )
                     })
                   }
