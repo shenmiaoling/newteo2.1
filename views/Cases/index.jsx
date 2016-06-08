@@ -26,22 +26,23 @@ module.exports = React.createClass({
     })
   },
   render(){
+    const activeStyle = {color: '#CA8100'}
     return <div>
       <div className='cases-navbar'>
         <div className='container'>
           <div className='case-txt'>
             <ul className="nav nav-inline">
               <li className="nav-item case-nav">
-                <Link to="/cases" className="nav-link nav-icon-all"><span className="iconfont all icon-all"></span></Link>
+                <Link to="/cases?all" className="nav-link nav-icon-all" activeStyle={activeStyle}><span className="iconfont all icon-all"></span></Link>
               </li>
               <li className="nav-item nav-li case-nav">
-                <Link to='/cases/?subject=网站'className="nav-link nav-txt">网页</Link>
+                <Link to='/cases/?subject=网站'className="nav-link nav-txt" activeStyle={activeStyle}>网页</Link>
               </li>
               <li className="nav-item nav-li case-nav">
-                <Link to='/cases/?subject=移动应用'className="nav-link nav-txt">软件</Link>
+                <Link to='/cases/?subject=移动应用'className="nav-link nav-txt" activeStyle={activeStyle}>软件</Link>
               </li>
               <li className="nav-item case-nav">
-                <Link to='/cases/?subject=微信公众号' className="nav-link nav-txt">微信</Link>
+                <Link to='/cases/?subject=微信公众号' className="nav-link nav-txt" activeStyle={activeStyle}>微信</Link>
               </li>
             </ul>
           </div>
@@ -59,7 +60,10 @@ module.exports = React.createClass({
                   </div>
               </div>
             </Link>
-            <img src='/images/accomplish.png' className='case-staus'/>
+            {
+              item.compeleted ? <img src='/images/accomplish.png' className='case-staus'/> :
+              <img src='/images/going.png' className='case-staus'/>
+            }
             <div className='col-lg-2 col-xl-2 col-xs-2 col-sm-2 col-md-2'>
                 <h2 className='case-label'>金额</h2>
                 <h2 className='case-count'>￥ {item.price}</h2>

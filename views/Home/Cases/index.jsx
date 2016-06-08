@@ -17,8 +17,6 @@ module.exports=React.createClass({
             cases: response ? response.body : []
         })
       }
-
-      console.log([response.body, err])
     })
   },
 

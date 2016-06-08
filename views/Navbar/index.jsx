@@ -24,7 +24,7 @@ module.exports = React.createClass({
               <Link to="/requirement" className="nav-link navbar-text" activeStyle={activeStyle}>{locales.zh_CN.requirement}</Link>
             </li>
             <li className="nav-item">
-              <Link to="/cases" className="nav-link navbar-text" activeStyle={activeStyle}>{locales.zh_CN.cases}</Link>
+              <Link to="/cases?all" className="nav-link navbar-text" activeStyle={activeStyle}>{locales.zh_CN.cases}</Link>
             </li>
             <li className="nav-item">
               <Link to="/product" className="nav-link navbar-text" activeStyle={activeStyle}>{locales.zh_CN.product}</Link>

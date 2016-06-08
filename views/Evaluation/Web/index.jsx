@@ -29,6 +29,12 @@ module.exports = React.createClass({
     })
   },
   render(){
+    const sum = _.reduce(this.state.evaluationArray,(x,y)=>{
+      const a = x.price || 0
+      const b = y.price || 0
+      return a+b
+      },0)
+    console.log(this.state.evaluationArray)
     return <div className='container'>
       <div className='row steps'>
         <div className='col-lg-4 col-xl-4 col-xs-4 col-sm-4 col-md-4'>
@@ -82,7 +88,7 @@ module.exports = React.createClass({
           }}>清除选项</button>
         </div>
         <div className='col-xs-6 col-sm-6 col-md-6 col-xl-6 col-lg-6'>
-          <Link to={`/evaluation/wechat/result?total=${_.reduce(this.state.evaluationArray,(x,y)=>{return x.price+y.price},0)}&count=${this.state.evaluationArray.length}`}>
+          <Link to={`/evaluation/wechat/result?total=${this.state.evaluationArray}&count=${this.state.evaluationArray.length}`}>
             <button type="button" className="btn btn-primary submit-btn evaluation-btn table-btn count-result-btn"><span className='table-btn-txt'>计算结果</span></button>
           </Link>
         </div>
