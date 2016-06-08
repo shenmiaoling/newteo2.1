@@ -1,41 +1,49 @@
 @media (max-width: 600px)
   .nav-mobile
-      height: 100px
-  .nav-icon
-    font-size: 25px!important
-    padding-top: 20px
+    height: 100px
+  .nav-list .nav
+    top: 98px!important
   .img-nav
-    padding-top: -10px
+    width: 50%
 @media (max-width: 435px)
   .nav-mobile
-      height: 90px
+    height: 90px
+  .nav-list .nav
+    top: 78px!important
 @media (max-width: 411px)
   .nav-mobile
       height: 80px
 @media (max-width: 360px)
   .nav-mobile
       height: 70px
+  .nav-list .nav
+    top: 68px!important
 @media (max-width: 320px)
   .nav-mobile
       height: 60px
+  .nav-list .nav
+    top: 58px!important
 .nav-mobile
   background-color: #52D69D
 .col-img
   display: block
   margin: 0 auto
   width: 20%
-.nav-icon
+.mobile-icon
   color: white
   text-align: right
+  font-size: 22px!important
 .nav-list
-  padding-right: 20px
-  padding-top: -10px
+  padding-top: 10px
   text-align: right
+  position: static
 .nav-list .nav
   position: absolute
   background-color: #52D69D
-  width: 100%
+  left: -4px
+  right: 0
   height: 0
+  top: 60px
   margin-left: 5px
   transition: all 0.25s ease-in-out
   overflow: hidden
@@ -43,7 +51,7 @@
 .nav-list .nav.nav-is-open
   display: block
   height: 280px
-
+  box-shadow: 0 5px 3px 1px rgba(0, 0, 0, 0.2)
 .nav-list .nav-panel
   display: none
 .nav-text
@@ -52,4 +60,6 @@
   margin-right: 100px
   padding-top: 20px
 .img-nav
-  width: 80%
+  width: 60%
+  margin-top: 15px
+  margin-left: 10px

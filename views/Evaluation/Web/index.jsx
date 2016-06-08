@@ -14,13 +14,13 @@ module.exports = React.createClass({
   addEvaluation(result){
     this.setState({
       evaluationArray: this.state.evaluationArray.concat([result])
-    },()=>{console.log(this.state.evaluationArray)})
+    })
   },
   removeEvaluation(result){
     const evaluationArray = this.state.evaluationArray.filter((item)=>{return item.id != result.id})
     this.setState({
       evaluationArray: evaluationArray
-    },()=>{console.log(this.state.evaluationArray)})
+    })
 
   },
   updateCount(num=0){
@@ -29,12 +29,9 @@ module.exports = React.createClass({
     })
   },
   render(){
-    const sum = _.reduce(this.state.evaluationArray,(x,y)=>{
-      const a = x.price || 0
-      const b = y.price || 0
-      return a+b
+    const sum = _.reduce(_.pluck(this.state.evaluationArray,'price'),(x,y)=>{
+      return x+y
       },0)
-    console.log(this.state.evaluationArray)
     return <div className='container'>
       <div className='row steps'>
         <div className='col-lg-4 col-xl-4 col-xs-4 col-sm-4 col-md-4'>
@@ -88,7 +85,7 @@ module.exports = React.createClass({
           }}>清除选项</button>
         </div>
         <div className='col-xs-6 col-sm-6 col-md-6 col-xl-6 col-lg-6'>
-          <Link to={`/evaluation/wechat/result?total=${this.state.evaluationArray}&count=${this.state.evaluationArray.length}`}>
+          <Link to={`/evaluation/wechat/result?total=${sum}&count=${this.state.evaluationArray.length}`}>
             <button type="button" className="btn btn-primary submit-btn evaluation-btn table-btn count-result-btn"><span className='table-btn-txt'>计算结果</span></button>
           </Link>
         </div>
