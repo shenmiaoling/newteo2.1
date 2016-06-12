@@ -61,7 +61,6 @@ module.exports = React.createClass({
     })
   },
   render(){
-    console.log(this.props)
     return <div className='container'>
       <form accept-charset='UTF-8' className='require-form' onSubmit={this.handleSubmit}>
         <div className='form-container'>

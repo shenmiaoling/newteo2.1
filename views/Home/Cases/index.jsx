@@ -29,8 +29,8 @@ module.exports=React.createClass({
         <div className="row">
           { this.state.cases.map((item, index) => {
             return(
-              <Link key={index}  to={`/cases/${item.objectId}`}>
-                <div className="col-xs-6 col-sm-6 col-md-3 col-xl-3 col-lg-3">
+              <div className="col-xs-6 col-sm-6 col-md-3 col-xl-3 col-lg-3" key={index}>
+                <Link to={`/cases/${item.objectId}`} className='cases-container-a'>
                   <div className='img-container '>
                     <div className='cover hidden-md-down'>
                       <p>项目名称：{item.title}</p>
@@ -41,8 +41,8 @@ module.exports=React.createClass({
                       <p>项目名称：{item.title}</p>
                     </div>
                   </div>
-                </div>
-              </Link>
+                </Link>
+              </div>
               )
           })}
         </div>

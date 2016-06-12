@@ -16,8 +16,15 @@ module.exports = React.createClass({
         navIsOpen:!this.state.navIsOpen
     })
   },
+  handleNavup(){
+    this.setState({
+      navIsOpen:false
+    })
+  },
   render() {
-    return <nav className="navbar navbar-light bg-faded hidden-md-up nav-mobile">
+    return <div>
+      <div className='transparent hidden-md-up' onClick={this.handleNavup}></div>
+      <nav className="navbar navbar-light bg-faded hidden-md-up nav-mobile">
       <div className='row'>
         <IndexLink to="/" className="col-sm-3 col-xs-3 col-img"><img src='../../images/logo.png' className='img-nav'></img></IndexLink>
           <div className='col-sm-9 col-xs-9 nav-list' >
@@ -42,5 +49,6 @@ module.exports = React.createClass({
         </div>
           </div>
       </nav>
+    </div>
   }
 })

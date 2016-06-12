@@ -21,7 +21,6 @@ module.exports = React.createClass({
     this.setState({
       evaluationArray: evaluationArray
     })
-
   },
   updateCount(num=0){
     this.setState({
@@ -69,7 +68,6 @@ module.exports = React.createClass({
                   }
                 </td>
                 </tr>
-
             })
           }
           <tr>
@@ -85,7 +83,7 @@ module.exports = React.createClass({
           }}>清除选项</button>
         </div>
         <div className='col-xs-6 col-sm-6 col-md-6 col-xl-6 col-lg-6'>
-          <Link to={`/evaluation/wechat/result?total=${sum}&count=${this.state.evaluationArray.length}`}>
+          <Link to={`/evaluation/web/result?total=${sum}&count=${this.state.evaluationArray.length}`}>
             <button type="button" className="btn btn-primary submit-btn evaluation-btn table-btn count-result-btn"><span className='table-btn-txt'>计算结果</span></button>
           </Link>
         </div>

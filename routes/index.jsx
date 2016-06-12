@@ -28,9 +28,9 @@ module.exports = ()=>{
       <IndexRoute component={Home} />
       <Route path='evaluation' component={Evaluation}/>
       <Route path='evaluation/web' component={Web} />
-      <Route path='evaluation/wechat/result' component={Result}/>
+      <Route path='evaluation/web/result' component={Result}/>
       <Route path='evaluation/ios' component={Ios}/>
-      <Route path='evaluation/wechat/result' component={Result}/>
+      <Route path='evaluation/ios/result' component={Result}/>
       <Route path='evaluation/android' component={Android}/>
       <Route path='evaluation/android/result' component={Result}/>
       <Route path='evaluation/wechat' component={Wechat}/>

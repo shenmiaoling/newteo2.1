@@ -52,31 +52,35 @@ module.exports = React.createClass({
         {this.state.cases.map((item,index)=>{
           return <div className='caselist' key={index}>
           <div className='row'>
-            <Link to={`/cases/${item.objectId}`}>
-              <div className='col-lg-5 col-xl-5 col-xs-5 col-sm-5 col-md-5 case-image-container'>
+            <div className='col-lg-5 col-xl-5 col-xs-5 col-sm-5 col-md-5 case-image-container'>
+              <Link to={`/cases/${item.objectId}`}>
                   <img src={`${item.pics[0].url}?imageView2/1/w/271/h/180`} className='case-image'/>
                   <div className='img-bottom'>
                     {item.title}
                   </div>
-              </div>
-            </Link>
+                </Link>
+            </div>
             {
               item.compeleted ? <img src='/images/accomplish.png' className='case-staus'/> :
               <img src='/images/going.png' className='case-staus'/>
             }
-            <div className='col-lg-2 col-xl-2 col-xs-2 col-sm-2 col-md-2'>
-                <h2 className='case-label'>金额</h2>
-                <h2 className='case-count'>￥ {item.price}</h2>
-            </div>
-            <div className='col-lg-2 col-xl-2 col-xs-2 col-sm-2 col-md-2'>
-              <h2 className='case-label'>周期</h2>
-              <h2 className='case-count'>{item.tern}</h2>
-            </div>
-            <div className='col-lg-2 col-xl-2 col-xs-2 col-sm-2 col-md-2'>
-              <h3 className='case-label'>类型</h3>
-              <h3 className='case-count'>{item.subject}</h3>
-            </div>
+            <div className='col-lg-7 col-xl-7 col-xs-7 col-sm-7 col-md-7'>
+                <div className='clearfix'>
+                <div className='cases-info'>
+                    <h2 className='case-label'>金额</h2>
+                    <h2 className='case-count'>￥ {item.price}</h2>
+                </div>
+                <div className='cases-info'>
+                  <h2 className='case-label'>周期</h2>
+                  <h2 className='case-count'>{item.tern}周</h2>
+                </div>
+                <div className='cases-info'>
+                  <h3 className='case-label'>类型</h3>
+                  <h3 className='case-count'>{item.subject}</h3>
+                </div>
+                </div>
           </div>
+        </div>
         </div>
         })}
       </div>
