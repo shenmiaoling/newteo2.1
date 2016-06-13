@@ -64,13 +64,13 @@
           {
             "id": 398,
             "title": "普通设计",
-            "price": 0.5,
+            "price": 5000,
             "description": "对设计无过高要求"
           },
           {
             "id": 401,
             "title": "高级设计",
-            "price": 1,
+            "price": 10000,
             "description": "对设计要求较高或有特殊要求"
           },
           {
@@ -727,13 +727,13 @@
           {
             "id": 175,
             "title": "普通设计",
-            "price": 0.5,
+            "price": 5000,
             "description": "对设计无过高要求"
           },
           {
             "id": 178,
             "title": "高级设计",
-            "price": 1,
+            "price": 10000,
             "description": "对设计要求较高或有特殊要求"
           },
           {
@@ -1366,13 +1366,13 @@
           {
             "id": 498,
             "title": "普通设计",
-            "price": 0.5,
+            "price": 5000,
             "description": "对原型设计无过高要求"
           },
           {
             "id": 501,
             "title": "高级设计",
-            "price": 1,
+            "price": 10000,
             "description": "对原型设计要求较高或特殊要求"
           },
           {
