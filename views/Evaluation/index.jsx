@@ -1,7 +1,11 @@
 import React from 'react'
 import {Link} from 'react-router'
+import {locales} from '../../settings'
 require('./styles')
 module.exports = React.createClass({
+  componentDidMount(){
+    document.title = locales.zh_CN.evaluation
+  },
   render(){
     return <div className='container evaluation'>
       <div className='row steps'>

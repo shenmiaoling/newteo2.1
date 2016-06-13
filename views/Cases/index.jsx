@@ -2,6 +2,7 @@ import React from 'react'
 import {Link,IndexLink} from 'react-router'
 import superagent from 'superagent'
 import apis from '../../apis'
+import {locales} from '../../settings'
 require ('./styles')
 module.exports = React.createClass({
   getInitialState(){
@@ -10,6 +11,7 @@ module.exports = React.createClass({
     }
   },
   componentWillMount(){
+    document.title = locales.zh_CN.cases
     const query = this.props.location.search
     superagent.get(apis.demos + query).end((err,response)=>{
       this.setState({

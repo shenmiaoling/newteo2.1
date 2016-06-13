@@ -1,6 +1,10 @@
 import React from 'react'
+import {locales} from '../../settings'
 require('./styles')
 module.exports = React.createClass({
+  componentDidMount(){
+    document.title = locales.zh_CN.product
+  },
   render(){
     return <div className='container'>
       <div className='row product'>

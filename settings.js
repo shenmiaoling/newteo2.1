@@ -1,7 +1,7 @@
 module.exports = {
   locales: {
     zh_CN: {
-      home: '首页',
+      home: '新潮科技',
       evaluation: '估价',
       requirement: '需求',
       users: '用户',

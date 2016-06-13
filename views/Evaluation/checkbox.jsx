@@ -20,7 +20,7 @@ module.exports = React.createClass({
   },
   render(){
     return <label className="checkbox-check">
-      <input type="checkbox"  onChange={this.handleChange} checked={this.state.checked} onClick={this.handleClick} value="option1"/>{this.props.label}
+      <input type="checkbox"  onChange={this.handleChange} checked={this.state.checked} onClick={this.handleClick}/>{this.props.label}
       <div className='description'>{this.props.description}</div>
     </label>
   }

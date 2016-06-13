@@ -1,6 +1,10 @@
 import React from 'react'
+import {locales} from '../../settings'
 require('./styles')
 module.exports = React.createClass({
+  componentDidMount(){
+    document.title = locales.zh_CN.contact
+  },
   render(){
     return <div className='contact'>
       <div className="container">
