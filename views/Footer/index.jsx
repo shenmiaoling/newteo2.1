@@ -10,7 +10,7 @@ module.exports=React.createClass({
           <div className='col-lg-6 col-xl-6 col-xs-6 col-sm-6 col-md-6'>
             <div className='row info-address'>
               <div className='col-lg-3 col-xl-3 col-xs-3 col-sm-3 col-md-3'>
-                <div className='info-icon iconfont address icon-address'></div>
+                <div className='info-icon iconfont address icon-address address-icon'></div>
               </div>
               <div className='col-lg-9 col-xl-9 col-xs-9 col-sm-9 col-md-9'>
                 <p className='info-text'>{locales.zh_CN.address}</p>
@@ -26,7 +26,7 @@ module.exports=React.createClass({
             </div>
             <div className='row info-address'>
               <div className='col-lg-3 col-xl-3 col-xs-3 col-sm-3 col-md-3'>
-                <div className='info-icon iconfont contact icon-contact'></div>
+                <div className='info-icon iconfont contact icon-contact phone-icon'></div>
               </div>
               <div className='col-lg-9 col-xl-9 col-xs-9 col-sm-9 col-md-9'>
                 <p className='info-text'>{locales.zh_CN.phone_number}</p>

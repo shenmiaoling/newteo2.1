@@ -70,11 +70,11 @@ module.exports = React.createClass({
                 <div className='clearfix'>
                 <div className='cases-info'>
                     <h2 className='case-label'>金额</h2>
-                    <h2 className='case-count'>￥ {item.price}</h2>
+                    <h2 className='case-count'>￥{item.price}</h2>
                 </div>
                 <div className='cases-info'>
                   <h2 className='case-label'>周期</h2>
-                  <h2 className='case-count'>{item.tern}周</h2>
+                  <h2 className='case-count'>{item.tern}天</h2>
                 </div>
                 <div className='cases-info'>
                   <h3 className='case-label'>类型</h3>
