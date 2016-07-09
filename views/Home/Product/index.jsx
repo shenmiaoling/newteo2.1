@@ -9,7 +9,7 @@ module.exports=React.createClass({
       <div className='container product-container'>
         <div className="row product-row">
           <div className="col-xs-12 col-sm-12 col-md-6 col-xl-6 col-lg-6 product-col-img">
-            <img src='./images/product_1.jpg' className="product-img"/>
+            <img src='/images/product_1.jpg' className="product-img"/>
           </div>
           <div className="col-xs-12 col-sm-12 col-md-6 col-xl-6 col-lg-6 product-col-img">
             <img src='./images/product_1.jpg' className="product-img"/>

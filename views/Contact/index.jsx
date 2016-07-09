@@ -8,7 +8,6 @@ module.exports = React.createClass({
   render(){
     return <div className='contact'>
       <div className="container">
-        <img src='./images/pencil.jpg'className='contact-img img-rounded'/>
         <p className='contact-intro'>
           newTeo乃潮州市潮安区新潮网络科技有限公司（新潮科技）麾下核心技术&设计团队。
           主要提供现代互联网应用的需求梳理、UI设计、程序开发和维护等服务。
