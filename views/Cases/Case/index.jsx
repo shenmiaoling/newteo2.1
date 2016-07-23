@@ -1,6 +1,7 @@
 import React from 'react'
 require('./styles')
 import superagent from 'superagent'
+import _ from 'underscore'
 module.exports = React.createClass({
   getInitialState(){
   return{
@@ -20,7 +21,7 @@ module.exports = React.createClass({
       <div className='show clearfix'>
         <div className="case-pic">
           {
-            this.state.caseContent.pics.map((item,index)=>{
+            _.rest(this.state.caseContent.pics).map((item,index)=>{
               return<img src={item.url} key={index} className='case-pics'/>
             })
           }
