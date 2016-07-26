@@ -9,6 +9,7 @@ module.exports = React.createClass({
   }
 },
   componentDidMount(){
+    window.scroll(null,0)
     superagent.get(`https://newteo.leanapp.cn/v1/demos/${this.props.params.id}`).end((err,response)=>{
       this.setState({
         caseContent: response.body
@@ -17,7 +18,6 @@ module.exports = React.createClass({
   },
   render(){
     return <div className="container">
-      <img className='case-logo' src='/images/pm.png'/>
       <div className='show clearfix'>
         <div className="case-pic">
           {

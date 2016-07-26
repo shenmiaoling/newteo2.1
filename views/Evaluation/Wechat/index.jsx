@@ -11,6 +11,9 @@ module.exports = React.createClass({
       evaluationArray:[],
     }
   },
+  componentDidMount(){
+    window.scroll(null,0)
+  },
   addEvaluation(result){
     this.setState({
       evaluationArray: this.state.evaluationArray.concat([result])
