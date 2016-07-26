@@ -66,7 +66,7 @@ module.exports = React.createClass({
               item.compeleted ? <img src='/images/accomplish.png' className='case-staus'/> :
               <img src='/images/going.png' className='case-staus'/>
             }
-            <div className='col-lg-7 col-xl-7 col-xs-7 col-sm-7 col-md-7'>
+            <div className='col-lg-7 col-xl-7 col-xs-7 col-sm-7 col-md-7 case-intro'>
                 <div className='clearfix'>
                 <div className='cases-info'>
                     <h2 className='case-label'>金额</h2>

@@ -9,21 +9,24 @@ module.exports = React.createClass({
   getInitialState(){
     return{
       navIsOpen:false,
+      transparent: false
     }
   },
   handleClick(event){
     this.setState({
-        navIsOpen:!this.state.navIsOpen
+        navIsOpen:!this.state.navIsOpen,
+        transparent:true
     })
   },
   handleNavup(){
     this.setState({
-      navIsOpen:false
+      navIsOpen:false,
+      transparent: false
     })
   },
   render() {
     return <div>
-      <div className='transparent hidden-md-up' onClick={this.handleNavup}></div>
+      <div className={this.state.transparent?'transparent hidden-md-up':''} onClick={this.handleNavup}></div>
       <nav className="navbar navbar-light bg-faded hidden-md-up nav-mobile">
       <div className='row'>
         <IndexLink to="/" className="col-sm-3 col-xs-3 col-img"><img src='../../images/mobilelogo.png' className='img-nav'></img></IndexLink>
