@@ -8,7 +8,7 @@ module.exports = React.createClass({
   },
   render(){
     return <div className='container evaluation'>
-      <div className='row steps'>
+      <div className='row steps hidden-md-down'>
         <div className='col-lg-4 col-xl-4 col-xs-4 col-sm-4 col-md-4'>
           <img src='/images/first-step.png' className='block-img'/>
         </div>

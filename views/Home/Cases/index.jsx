@@ -22,8 +22,8 @@ module.exports=React.createClass({
 
   render(){
     return <div className='Cases'>
-      <div className='case-text-center'>
-        <p>这些项目被newTeo实现</p>
+      <div>
+        <h1 className='case-text-center'>这些项目被newTeo实现</h1>
       </div>
       <div className='container cases-container'>
         <div className="row">

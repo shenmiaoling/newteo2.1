@@ -1,6 +1,6 @@
 'use strict'
-function calculation(prcies, options) {
-  const finalPrices = howMuch(prcies, options)
+function calculation(platform, prcies, options) {
+  const finalPrices = howMuch(platform, prcies, options)
   const term = howLong(options)
   return {
     finalPrices,
@@ -22,12 +22,13 @@ function howLong(options) {
   }
 }
 
-function howMuch(prices, options) {
+function howMuch(platform, prices, options) {
   prices = Number(prices)
+  const atLeast = (platform == "web" ? "￥5000" : "￥15000")
   const arg = arrange(options)
   switch(true) {
     case prices < 5000 :
-    return '￥5000'
+    return atLeast
     default:
     return `￥${prices} - ￥${prices + arg} `
   }
