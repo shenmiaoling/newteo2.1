@@ -27,10 +27,10 @@ module.exports = React.createClass({
   render() {
     return <div>
       <div className={this.state.transparent?'transparent hidden-md-up':''} onClick={this.handleNavup}></div>
-      <div className="container navbar-light bg-faded hidden-md-up nav-mobile">
-      <div className='row'>
-        <IndexLink to="/" className="col-sm-3 col-xs-3 col-img"><img src='../../images/mobilelogo.png' className='img-nav'></img></IndexLink>
-          <div className='col-sm-9 col-xs-9 nav-list' >
+      <div className=" navbar-light bg-faded hidden-md-up nav-mobile">
+      <div className='container'>
+        <IndexLink to="/" className="col-img"><img src='../../images/mobilelogo.png' className='img-nav' onClick={this.handleNavup}></img></IndexLink>
+          <div className='nav-list' >
           <span className="iconfont icon-drag mobile-icon" onClick={this.handleClick}></span>
           <ul className={this.state.navIsOpen?'nav nav-is-open':'nav'}>
             <li className="nav-item moblile-link">

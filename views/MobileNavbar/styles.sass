@@ -26,23 +26,23 @@
   z-index: 10
   position: relative
 .col-img
-  display: block
   margin: 0 auto
   width: auto
   height: 100%
+  display: inline-block
 .mobile-icon
   color: white
   text-align: right
   font-size: 22px!important
 .nav-list
-  text-align: right
+  float: right
   position: static
-  // padding: 0
+  padding-right: 0
   padding-top: 15px
 .nav-list .nav
   position: absolute
   background-color: #52D69D
-  left: -4px
+  left: -15px
   right: 0
   height: 0
   top: 60px
@@ -50,9 +50,11 @@
   transition: all 0.25s ease-in-out
   overflow: hidden
   z-index: 100
+  text-align: right
 .nav-list .nav.nav-is-open
   display: block
   height: 280px
+  text-align: right
   box-shadow: 0 5px 3px 1px rgba(0, 0, 0, 0.2)
 .nav-list .nav-panel
   display: none
