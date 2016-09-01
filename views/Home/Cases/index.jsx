@@ -27,7 +27,7 @@ module.exports=React.createClass({
       </div>
       <div className='container cases-container'>
         <div className="row">
-          { this.state.cases.map((item, index) => {
+          { this.state.cases.splice(0,16).map((item, index) => {
             return(
               <div className="col-xs-6 col-sm-6 col-md-3 col-xl-3 col-lg-3" key={index}>
                 <Link to={`/cases/${item.objectId}`} className='cases-container-a'>
